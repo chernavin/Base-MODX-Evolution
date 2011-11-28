@@ -858,8 +858,8 @@ UPDATE `{PREFIX}site_content` SET `type`='document', `contentType`='text/html' W
 (id, templatename, description, editor_type, category, icon, template_type, content, locked) VALUES ('3','Minimal Template','Default minimal empty template (content returned only)','0','0','','0','[*content*]','0'); */
 
 REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`) VALUES
-(3, 'Типовая страница', '', 0, 2, '', 0, '[*content*]', 0),
-(4, 'Главная страница', '', 0, 2, '', 0, '[*content*]', 0);
+(3, 'Типовая страница', '', 0, 1, '', 0, '[*content*]', 0),
+(4, 'Главная страница', '', 0, 1, '', 0, '[*content*]', 0);
 
 # Default Site Documents
 
@@ -869,7 +869,8 @@ REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `edi
 REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `haskeywords`, `hasmetatags`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`) VALUES
 (1, 'document', 'text/html', 'Главная', '', '', 'index', '', 1, 0, 0, 0, 0, '', '', 1, 4, 0, 1, 1, 1, 1130304721, 1, 1321514136, 0, 0, 0, 1130304721, 1, '', 0, 0, 0, 0, 0, 0, 0),
 (2, 'document', 'text/html', 'Системные страницы', '', '', 'system', '', 0, 0, 0, 0, 1, '', '', 0, 0, 100, 0, 0, 1, 1321441110, 1, 1321514208, 0, 0, 0, 0, 0, '', 1, 0, 0, 0, 0, 0, 1),
-(3, 'document', 'text/html', 'Страница не существует', '', '', '404', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница не существует.\r\n</p>\r\n<p>\r\n<a href="[~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 0, 100, 0, 1, 1, 1321441207, 1, 1321514221, 0, 0, 0, 1321441207, 1, '', 1, 0, 0, 0, 0, 0, 1);
+(3, 'document', 'text/html', 'Страница не существует', '', '', '404', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница не существует.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 0, 100, 0, 1, 1, 1321441207, 1, 1321514221, 0, 0, 0, 1321441207, 1, '', 1, 0, 0, 0, 0, 0, 1),
+(4, 'document', 'text/html', 'Страница закрыта для просмотра', '', '', '403', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница закрыта для просмотра.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 0, 99, 0, 1, 1, 1322479027, 1, 1322479027, 0, 0, 0, 1322479027, 1, '', 1, 0, 0, 0, 0, 0, 1);
 
 REPLACE INTO `{PREFIX}manager_users` 
 (id, username, password)VALUES 
@@ -905,7 +906,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('site_name','My MODx Site'),
 ('site_start','1'),
 ('error_page','3'),
-('unauthorized_page','1'),
+('unauthorized_page','4'),
 ('site_status','1'),
 ('site_unavailable_message','The site is currently unavailable'),
 ('track_visitors','0'),
@@ -926,7 +927,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('failed_login_attempts','3'),
 ('blocked_minutes','60'),
 ('use_captcha','0'),
-('captcha_words','MODx,Access,Better,BitCode,Cache,Desc,Design,Excell,Enjoy,URLs,TechView,Gerald,Griff,Humphrey,Holiday,Intel,Integration,Joystick,Join(),Tattoo,Genetic,Light,Likeness,Marit,Maaike,Niche,Netherlands,Ordinance,Oscillo,Parser,Phusion,Query,Question,Regalia,Righteous,Snippet,Sentinel,Template,Thespian,Unity,Enterprise,Verily,Veri,Website,WideWeb,Yap,Yellow,Zebra,Zygote'),
+('captcha_words',''),
 ('emailsender','{ADMINEMAIL}'),
 ('emailsubject','Your login details'),
 ('number_of_logs','100'),
