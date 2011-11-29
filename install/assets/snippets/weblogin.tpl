@@ -13,6 +13,9 @@
  */
 
 # Created By Raymond Irving 2004
+# 
+# changed by Andchir 2010
+# 
 #::::::::::::::::::::::::::::::::::::::::
 # Params:	
 #
@@ -40,6 +43,8 @@
 #	
 #	&tpl			- (Optional)
 #		Chunk name or document id to as a template
+# 
+# &alerttpl - template for alert messages
 #				  
 #	Note: Templats design:
 #			section 1: login template
@@ -67,6 +72,9 @@ if(isset($loginid)) $loginhomeid=$loginid;
 if(isset($logoutid)) $logouthomeid = $logoutid;
 if(isset($template)) $tpl = $template;
 
+if(!isset($alerttpl)) $alerttpl = '';
+
+
 # Snippet customize settings
 $liHomeId	= isset($loginhomeid)? explode(",",$loginhomeid):array($modx->config['login_home'],$modx->documentIdentifier);
 $loHomeId	= isset($logouthomeid)? $logouthomeid:$modx->documentIdentifier;
@@ -88,8 +96,9 @@ $site_id = isset($site_id)? $site_id: '';
 $cookieKey = substr(md5($site_id."Web-User"),0,15);
 
 # Start processing
-include_once $snipPath."weblogin/weblogin.common.inc.php";
-include_once ($modx->config['base_path'] . "manager/includes/crypt.class.inc.php");
+require $snipPath."weblogin/lang/russian-UTF-8.php";
+require_once $snipPath."weblogin/weblogin.common.inc.php";
+require_once $modx->config['base_path'] . "manager/includes/crypt.class.inc.php";
 
 if ($isPWDActivate || $isPWDReminder || $isLogOut || $isPostBack) {
 	# include the logger class

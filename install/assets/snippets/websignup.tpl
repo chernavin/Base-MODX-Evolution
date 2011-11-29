@@ -52,6 +52,8 @@ $useCaptcha = isset($useCaptcha)? $useCaptcha : $modx->config['use_captcha'] ;
 // Override captcha if no GD
 if ($useCaptcha && !gd_info()) $useCaptcha = 0;
 
+if(!isset($alerttpl)) $alerttpl = '';
+
 # setup web groups
 $groups = isset($groups) ? explode(',',$groups):array();
 for($i=0;$i<count($groups);$i++) $groups[$i] = trim($groups[$i]);
@@ -62,8 +64,9 @@ $isPostBack        = count($_POST) && isset($_POST['cmdwebsignup']);
 $output = '';
 
 # Start processing
-include_once $snipPath."weblogin/weblogin.common.inc.php";
-include_once $snipPath."weblogin/websignup.inc.php";
+require $snipPath."weblogin/lang/russian-UTF-8.php";
+require_once $snipPath."weblogin/weblogin.common.inc.php";
+require_once $snipPath."weblogin/websignup.inc.php";
 
 # Return
 return $output;
