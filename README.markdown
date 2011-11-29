@@ -14,6 +14,9 @@ TransAlias обновлены параметры по умолчанию (Trans 
 Чанк itemDefault
 Плагин systemField (http://modx.com/extras/package/systemfield)
 Сниппет sitemap (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
+Сниппет eFormList
+Сниппет tvList
+Обновлён WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
 
 setup.sql
 error_page = 3
