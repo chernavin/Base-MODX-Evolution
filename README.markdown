@@ -1,38 +1,53 @@
 Base MODX Evolution
+===================
 
-Удалён шаблон MODxHost
-Добавлен 301 редирект FirstChildRedirect (http://community.modx-cms.ru/blog/questions/627.html#comment6754)
-Добавлен GetField 1.3 (http://modx.com/extras/package/getfield)
-phx 2.1.4 (http://modx.com/extras/package/phx)
-TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
-TransAlias обновлены параметры по умолчанию (Trans table = russian, Restrict alias to = lowercase alphanumeric)
-Удалён чанк WebLoginSideBar
-Добавлен чанк htmlHead
-Добавлен сниппет и плагин MultiPhotos (http://community.modx-cms.ru/blog/addons/1146.html)
-Чанк mmRules
-Чанк styleDefault
-Чанк itemDefault
-Плагин systemField (http://modx.com/extras/package/systemfield)
-Сниппет sitemap (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
-Сниппет eFormList
-Сниппет tvList
-Обновлён WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
+Сборка MODX Evolution "под себя".
 
-setup.sql
-error_page = 3
-friendly_urls = 1
-allow_duplicate_alias = 1
-use_alias_path = 1
-captcha_words = ''
-unauthorized_page = 4
+Предустановленные ресурсы
+-------------------------
 
-Главная
-Системные страницы
-Страница не существует
-Страница закрыта для просмотра
+* Главная (1)
+* Системные страницы (2)
+* Страница не существует (3)
+* Страница закрыта для просмотра (4)
 
-Типовая страница
-Главная страница
+Предустановленные шаблоны
+-------------------------
 
-TODO
-Feedback
+* Типовая страница (3)
+* Главная страница (4)
+
+Изменение в настройках
+----------------------
+* error_page = 3
+* unauthorized_page = 4
+* friendly_urls = 1
+* allow_duplicate_alias = 1
+* use_alias_path = 1
+* captcha_words = ''
+
+Удалено из дистрибутива
+-----------------------
+
+* Шаблон MODxHost
+* Чанк WebLoginSideBar
+* Чанк mm_demo_rules
+
+Обновлено в дистрибутиве
+------------------------
+
+* Добавлен 301 редирект FirstChildRedirect (http://community.modx-cms.ru/blog/questions/627.html#comment6754)
+* Изменены параметры TransAlias по умолчанию (russian, lowercase alphanumeric)
+* WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
+
+Добавлено в дистрибутив
+------------------------
+* Сниппет GetField 1.3 (http://modx.com/extras/package/getfield)
+* Плагин PHx 2.1.4 (http://modx.com/extras/package/phx)
+* Плагин TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
+* Сниппет и плагин MultiPhotos (http://community.modx-cms.ru/blog/addons/1146.html)
+* Плагин systemField (http://modx.com/extras/package/systemfield)
+* Сниппет sitemap (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
+* Чанки htmlHead, mmRules, styleDefault, itemDefault
+* Сниппеты eFormList, tvList
+* Чанки feedbackForm и feedbackReport
