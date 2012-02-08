@@ -1,12 +1,12 @@
 /**
  * feedbackForm
  * 
- * Default feedback form
+ * Форма обратной связи
  * 
  * @category	chunk
- * @version 	1.0.0
+ * @version 	1.1
  * @internal	@properties
- * @internal 	@modx_category Forms
+ * @internal 	@modx_category eForm
  */
 
 <div id="feedbackErrors">[+validationmessage+]</div>
@@ -16,22 +16,22 @@
 	
 	<table id="feedbackTable">
 		<tr>
-			<td align="right">Контакное лицо:</td>
-			<td><input type="text" name="name" size="25" maxlength="50" eform="Контакное лицо:text:1"></td>
+			<td>Контакное лицо:</td>
+			<td><input type="text" name="name" size="25" eform="Контакное лицо:text:1"></td>
 		</tr>
 		
 		<tr>
-			<td align="right">Телефон:</td>
-			<td><input type="text" name="phone" size="25" maxlength="40" eform="Телефон:text:1"></td>
+			<td>Телефон:</td>
+			<td><input type="text" name="phone" size="25" eform="Телефон:text:1"></td>
 		</tr>
 		
 		<tr>
-			<td align="right">Электронный ящик:</td>
-			<td><input type="text" name="email" size="25" maxlength="40" eform="Электронный ящик:email:1"></td>
+			<td>Электронный ящик:</td>
+			<td><input type="text" name="email" size="25" eform="Электронный ящик:email:1"></td>
 		</tr>
 		
 		<tr>
-			<td align="right" valign="top">Текст сообщения:</td>
+			<td>Текст сообщения:</td>
 			<td><textarea cols="40" rows="10" name="comment" eform="Текст сообщения:text:1"></textarea></td>
 		</tr>
 		
@@ -41,13 +41,18 @@
 		</tr>
 		
 		<tr>
-			<td align="right">Введите этот код:</td>
+			<td>Введите этот код:</td>
 			<td><input type="text" size="25" name="vericode"></td>
 		</tr>
 		
 		<tr>
-			<td></td>
+			<td>&nbsp;</td>
 			<td><input type="submit" value="Отправить"></td>
 		</tr>
 	</table>
 </form>
+
+<style type="text/css">
+	#feedbackErrors{margin:10px 0px;color:#F22}
+	#feedbackTable td{padding:5px;text-align:right;vertical-align:top}
+</style>

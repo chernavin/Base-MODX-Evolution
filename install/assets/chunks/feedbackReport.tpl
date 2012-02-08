@@ -1,32 +1,32 @@
 /**
  * feedbackReport
  * 
- * Default feedback report
+ * Отчет для формы обратной связи
  * 
  * @category	chunk
- * @version 	1.0.0
+ * @version 	1.1
  * @internal	@properties
- * @internal 	@modx_category Forms
+ * @internal 	@modx_category eForm
  */
 
 <table>
-	<tr valign="top">
-		<td align="right"><b>Контакное лицо:</b></td>
+	<tr>
+		<td style="text-align:right;vertical-align:top"><b>Контакное лицо:</b></td>
 		<td>[+name+]</td>
 	</tr>
 	
-	<tr valign="top">
-		<td align="right"><b>Телефон:</b></td>
+	<tr>
+		<td style="text-align:right;vertical-align:top"><b>Телефон:</b></td>
 		<td>[+phone+]</td>
 	</tr>
 	
-	<tr valign="top">
-		<td align="right"><b>Электронный ящик:</b></td>
+	<tr>
+		<td style="text-align:right;vertical-align:top"><b>Электронный ящик:</b></td>
 		<td>[+email+]</td>
 	</tr>
 	
-	<tr valign="top">
-		<td align="right"><b>Текст сообщения:</b></td>
+	<tr>
+		<td style="text-align:right;vertical-align:top"><b>Текст сообщения:</b></td>
 		<td>[+comment+]</td>
 	</tr>
 </table>

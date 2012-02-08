@@ -48,6 +48,6 @@ Base MODX Evolution
 * Сниппет и плагин MultiPhotos 1.2.4 (http://community.modx-cms.ru/blog/addons/1146.html)
 * Плагин systemField 1.3 (http://modx.com/extras/package/systemfield)
 * Сниппет sitemap 1.0.9 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
-* Чанки htmlHead, mmRules, styleDefault, itemDefault
+* Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedbackForm и feedbackReport
