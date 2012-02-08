@@ -284,17 +284,19 @@ class ditto {
 			$placeholders['ditto_iteration'] = $x;
 		}
 		
+		//Added by Andchir
+		//if (in_array("ditto_index",$this->fields["display"]["custom"])) {
+			$r_start = isset($_GET['start']) ? $_GET['start'] : 0;
+      $placeholders['ditto_index'] = $r_start+$x+1;
+		//}
+		
 		// set url placeholder
 		if (in_array("url",$this->fields["display"]["custom"])) {
 			$placeholders['url'] = $modx->makeURL($resource['id'],'','','full');
 		}
 
 		if (in_array("date",$this->fields["display"]["custom"])) {
-			$timestamp = ($resource[$dateSource] != "0") ? $resource[$dateSource] : $resource["createdon"];	
-			if (is_array($timestamp)) {
-			    $timestamp[1] = is_int($timestamp[1]) ? $timestamp[1] : strtotime($timestamp[1]);
-                $timestamp = $timestamp[1] + $timestamp[0];
-            }   
+			$timestamp = ($resource[$dateSource] != "0") ? $resource[$dateSource] : $resource["createdon"];
 			$placeholders['date'] = strftime($dateFormat,$timestamp);
 		}
 		
@@ -905,6 +907,7 @@ class ditto {
 		$limit= ($limit != "") ? "LIMIT $limit" : ""; // LIMIT capabilities - rad14701
 		$tblsc= $modx->getFullTableName("site_content");
 		$tbldg= $modx->getFullTableName("document_groups");
+    $tbltvc = $modx->getFullTableName("site_tmplvar_contentvalues");
 		// modify field names to use sc. table reference
 		$fields= "sc.".implode(",sc.",$fields);
 		if ($randomize != 0) {
@@ -912,7 +915,16 @@ class ditto {
 		} else {
 			$sort= $orderBy['sql'];
 		}
-			$where= ($where == "") ? "" : 'AND sc.' . implode('AND sc.', preg_replace("/^\s/i", "", explode('AND', $where)));
+    
+    //Added by Andchir (http://modx-shopkeeper.ru/)
+		if(substr($where, 0, 5)=="@SQL:"){
+      $where = ($where == "") ? "" : substr(str_replace('@eq','=',$where), 5);
+      $left_join_tvc = "LEFT JOIN $tbltvc tvc ON sc.id = tvc.contentid";
+    }else{
+      $where = ($where == "") ? "" : 'AND sc.' . implode('AND sc.', preg_replace("/^\s/i", "", explode('AND', $where)));
+      $left_join_tvc = '';
+    }
+      
 		if ($public) {
 			// get document groups for current user
 			if ($docgrp= $modx->getUserDocGroups())
@@ -923,7 +935,8 @@ class ditto {
 		
 		$published = ($published) ? "AND sc.published=1" : ""; 
 		
-		$sql = "SELECT DISTINCT $fields FROM $tblsc sc
+		//$sql = "SELECT DISTINCT $fields FROM $tblsc sc 
+    $sql = "SELECT DISTINCT $fields FROM $tblsc sc $left_join_tvc
 		LEFT JOIN $tbldg dg on dg.document = sc.id
 		WHERE sc.id IN (" . join($ids, ",") . ") $published AND sc.deleted=$deleted $where
 		".($public ? 'AND ('.$access.')' : '')." GROUP BY sc.id" .
@@ -1041,7 +1054,14 @@ class ditto {
 			$query = array();
 			foreach ($_GET as $param=>$value) {
 				if ($param != 'id' && $param != 'q') {
-					$query[htmlspecialchars($param, ENT_QUOTES)] = htmlspecialchars($value, ENT_QUOTES);
+					if(is_array($value)) {
+					  //$query[$param] = $value;
+					  foreach($value as $key => $val) {
+              $query[htmlspecialchars($param, ENT_QUOTES)][] = htmlspecialchars($val, ENT_QUOTES);
+            }
+					}else{
+					  $query[htmlspecialchars($param, ENT_QUOTES)] = htmlspecialchars($value, ENT_QUOTES);
+					}
 				}
 			}
 			if (!is_array($args)) {
@@ -1056,8 +1076,17 @@ class ditto {
 				}
 			}
 			$queryString = "";
-			foreach ($query as $param=>$value) {
-				$queryString .= '&'.$param.'='.(is_array($value) ? implode(",",$value) : $value);
+			foreach ($query as $param=>$value){
+				
+        //$queryString .= '&'.$param.'='.(is_array($value) ? implode(",",$value) : $value);
+        
+        if(!is_array($value)){
+          $queryString .= '&'.$param.'='.$value;
+        }else{
+          foreach ($value as $key=>$val){
+            $queryString .= '&'.$param.'[]='.$val;
+          }
+        }
 			}
 			$cID = ($id !== false) ? $id : $modx->documentObject['id'];
 			$url = $modx->makeURL(trim($cID), '', $queryString);
