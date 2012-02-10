@@ -10,5 +10,9 @@
  */
 
 <base href="[(site_url)]">
+
 <meta http-equiv="Content-Type" content="text/html; charset=[(modx_charset)]">
-<title>[+phx:if=`[*id*]`:isnot=`1`:then=`[*pagetitle*], `+][(site_name)]</title>
+[*metaKeywords:ifnotempty=`<meta name="keywords" content="[*metaKeywords*]">`*]
+[*metaDesc:ifnotempty=`<meta name="description" content="[*metaDesc*]">`*]
+
+<title>[*title:ifempty=`[*pagetitle*], [(site_name)]`*]</title>

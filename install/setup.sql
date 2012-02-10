@@ -872,7 +872,7 @@ REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `
 (2, 'document', 'text/html', 'Системные страницы', '', '', 'system', '', 0, 0, 0, 0, 1, '', '', 0, 0, 100, 0, 0, 1, 1321441110, 1, 1321514208, 0, 0, 0, 0, 0, '', 1, 0, 0, 0, 0, 0, 1),
 (3, 'document', 'text/html', 'Страница не существует', '', '', '404', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница не существует.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 2, 100, 0, 1, 1, 1321441207, 1, 1321514221, 0, 0, 0, 1321441207, 1, '', 1, 0, 0, 0, 0, 0, 1),
 (4, 'document', 'text/html', 'Страница закрыта для просмотра', '', '', '403', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница закрыта для просмотра.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 2, 99, 0, 1, 1, 1322479027, 1, 1322479027, 0, 0, 0, 1322479027, 1, '', 1, 0, 0, 0, 0, 0, 1),
-(7, 'document', 'text/xml', 'XML карта сайта', '', '', 'sitemap.xml', '', 1, 0, 0, 2, 0, '', '[[sitemap]]', 0, 2, 98, 0, 0, 1, 1328873489, 1, 1328873543, 0, 0, 0, 1328873489, 1, '', 1, 0, 0, 0, 0, 0, 1);
+(5, 'document', 'text/xml', 'XML карта сайта', '', '', 'sitemap.xml', '', 1, 0, 0, 2, 0, '', '[[sitemap]]', 0, 2, 98, 0, 0, 1, 1328873489, 1, 1328873543, 0, 0, 0, 1328873489, 1, '', 1, 0, 0, 0, 0, 0, 1);
 
 REPLACE INTO `{PREFIX}manager_users` 
 (id, username, password)VALUES 
