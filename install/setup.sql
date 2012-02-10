@@ -858,8 +858,8 @@ UPDATE `{PREFIX}site_content` SET `type`='document', `contentType`='text/html' W
 (id, templatename, description, editor_type, category, icon, template_type, content, locked) VALUES ('3','Minimal Template','Default minimal empty template (content returned only)','0','0','','0','[*content*]','0'); */
 
 REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`) VALUES
-(3, 'Типовая страница', '', 0, 1, '', 0, '[*content*]', 0),
-(4, 'Главная страница', '', 0, 1, '', 0, '[*content*]', 0);
+(3, 'Типовая страница', '', 0, 2, '', 0, '[*content*]', 0),
+(4, 'Главная страница', '', 0, 2, '', 0, '[*content*]', 0);
 
 # Default Site Documents
 
