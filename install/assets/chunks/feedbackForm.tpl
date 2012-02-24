@@ -36,7 +36,7 @@
 		</tr>
 		
 		<tr>
-			<td></td>
+			<td>&nbsp;</td>
 			<td><img src="[+verimageurl+]" alt="Код проверки"></td>
 		</tr>
 		
@@ -53,6 +53,6 @@
 </form>
 
 <style type="text/css">
-	#feedbackErrors{margin:10px 0px;color:#F22}
-	#feedbackTable td{padding:5px;text-align:right;vertical-align:top}
+	#feedbackErrors{margin:10px 0px;color:#F22;}
+	#feedbackTable td{padding:5px;text-align:right;vertical-align:top;}
 </style>
