@@ -42,6 +42,7 @@ Base MODX Evolution
 * Изменены параметры TransAlias по умолчанию (russian, lowercase alphanumeric)
 * WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
 * Ditto (http://modx-shopkeeper.ru/forum/viewtopic.php?id=266)
+* Транслитерация имён файлов при загрузке в MODx (http://www.supremum.lv/2010/04/09/transliteraciya-imyon-fajlov-pri-zagruzke-v-modx/)
 
 Добавлено в дистрибутив
 -----------------------
@@ -55,3 +56,5 @@ Base MODX Evolution
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedbackForm и feedbackReport
+* TV параметры title, metaKeywords, metaDesc
+* TV параметры sitemap_changefreq, sitemap_priority, urlOverride
