@@ -44,6 +44,8 @@ Base MODX Evolution
 * Ditto (http://modx-shopkeeper.ru/forum/viewtopic.php?id=266)
 * Транслитерация имён файлов при загрузке в MODx (http://www.supremum.lv/2010/04/09/transliteraciya-imyon-fajlov-pri-zagruzke-v-modx/)
 * Управление страницами вне дерева (http://community.modx-cms.ru/blog/tips_and_tricks/848.html)
+* Изменен адрес XML карты сайта в robots.txt
+* Обновление безопасности (http://forums.modx.com/thread/74423/modx-evolution-1-0-5-and-prior-remote-script-execution-vulnerability#dis-post-412760)
 
 Добавлено в дистрибутив
 -----------------------
