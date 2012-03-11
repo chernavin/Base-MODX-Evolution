@@ -16,23 +16,23 @@
 	
 	<table id="feedbackTable">
 		<tr>
-			<td>Контакное лицо:</td>
+			<td class="right">Контакное лицо<span class="red">*</span>:</td>
 			<td><input type="text" name="name" size="25" eform="Контакное лицо:text:1"></td>
 		</tr>
 		
 		<tr>
-			<td>Телефон:</td>
+			<td class="right">Телефон<span class="red">*</span>:</td>
 			<td><input type="text" name="phone" size="25" eform="Телефон:text:1"></td>
 		</tr>
 		
 		<tr>
-			<td>Электронный ящик:</td>
+			<td class="right">Электронный ящик<span class="red">*</span>:</td>
 			<td><input type="text" name="email" size="25" eform="Электронный ящик:email:1"></td>
 		</tr>
 		
 		<tr>
-			<td>Текст сообщения:</td>
-			<td><textarea cols="40" rows="10" name="comment" eform="Текст сообщения:text:1"></textarea></td>
+			<td class="right">Текст сообщения<span class="red">*</span>:</td>
+			<td><textarea cols="40" rows="10" name="msg" eform="Текст сообщения:text:1"></textarea></td>
 		</tr>
 		
 		<tr>
@@ -41,7 +41,7 @@
 		</tr>
 		
 		<tr>
-			<td>Введите этот код:</td>
+			<td class="right">Введите этот код<span class="red">*</span>:</td>
 			<td><input type="text" size="25" name="vericode"></td>
 		</tr>
 		
@@ -54,5 +54,7 @@
 
 <style type="text/css">
 	#feedbackErrors{margin:10px 0px;color:#F22;}
-	#feedbackTable td{padding:5px;text-align:right;vertical-align:top;}
+	#feedbackTable td{padding:5px;text-align:left;vertical-align:top;}
+	#feedbackTable td.right{text-align:right;}
+	#feedbackTable td.right span.red{color:red;}
 </style>

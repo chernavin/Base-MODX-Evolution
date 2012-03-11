@@ -27,6 +27,6 @@
 	
 	<tr>
 		<td style="text-align:right;vertical-align:top"><b>Текст сообщения:</b></td>
-		<td>[+comment+]</td>
+		<td>[+msg+]</td>
 	</tr>
 </table>
