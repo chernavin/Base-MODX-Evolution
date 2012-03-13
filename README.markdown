@@ -26,7 +26,9 @@ Base MODX Evolution
 * friendly_urls = 1
 * allow_duplicate_alias = 1
 * use_alias_path = 1
-* captcha_words = ''
+* captcha_words = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'
+* auto_template_logic = 'sibling'
+* tree_page_click = 27
 
 Удалено из дистрибутива
 -----------------------

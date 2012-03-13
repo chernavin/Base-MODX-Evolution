@@ -858,9 +858,9 @@ UPDATE `{PREFIX}site_content` SET `type`='document', `contentType`='text/html' W
 (id, templatename, description, editor_type, category, icon, template_type, content, locked) VALUES ('3','Minimal Template','Default minimal empty template (content returned only)','0','0','','0','[*content*]','0'); */
 
 REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`) VALUES
-(2, 'Системная страница', '', 0, 4, '', 0, '[*content*]', 0),
-(3, 'Типовая страница', '', 0, 4, '', 0, '[*content*]', 0),
-(4, 'Главная страница', '', 0, 4, '', 0, '[*content*]', 0);
+(2, 'Системная страница', '', 0, 2, '', 0, '[*content*]', 0),
+(3, 'Типовая страница', '', 0, 2, '', 0, '[*content*]', 0),
+(4, 'Главная страница', '', 0, 2, '', 0, '[*content*]', 0);
 
 # Default Site Documents
 
@@ -905,7 +905,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('server_protocol','http'),
 ('manager_language','{MANAGERLANGUAGE}'),
 ('modx_charset','UTF-8'),
-('site_name','My MODx Site'),
+('site_name','My MODX Site'),
 ('site_start','1'),
 ('error_page','3'),
 ('unauthorized_page','4'),
@@ -913,7 +913,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('site_unavailable_message','The site is currently unavailable'),
 ('track_visitors','0'),
 ('top_howmany','10'),
-('auto_template_logic','{AUTOTEMPLATELOGIC}'),
+('auto_template_logic','sibling'),
 ('default_template','3'),
 ('old_template',''),
 ('publish_default','0'),
@@ -929,7 +929,7 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('failed_login_attempts','3'),
 ('blocked_minutes','60'),
 ('use_captcha','0'),
-('captcha_words',''),
+('captcha_words','a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'),
 ('emailsender','{ADMINEMAIL}'),
 ('emailsubject','Your login details'),
 ('number_of_logs','100'),
@@ -975,7 +975,8 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('automatic_alias','1'),
 ('datetime_format','dd-mm-YYYY'),
 ('warning_visibility', '1'),
-('remember_last_tab', '0');
+('remember_last_tab', '0'),
+('tree_page_click', '27');
 
 
 REPLACE INTO `{PREFIX}user_roles` 
