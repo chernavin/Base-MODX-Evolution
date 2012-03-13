@@ -555,6 +555,7 @@ if (isset ($_POST['plugin']) || $installData) {
             $guid = mysql_real_escape_string($modulePlugin[5]);
             $category = mysql_real_escape_string($modulePlugin[6]);
             $leg_names = '';
+            $disabled = $modulePlugin[9];
             if(array_key_exists(7, $modulePlugin)) {
                 // parse comma-separated legacy names and prepare them for sql IN clause
                 $leg_names = "'" . implode("','", preg_split('/\s*,\s*/', mysql_real_escape_string($modulePlugin[7]))) . "'";
@@ -602,7 +603,7 @@ if (isset ($_POST['plugin']) || $installData) {
                     }
                     echo "<p>&nbsp;&nbsp;$name: <span class=\"ok\">" . $_lang['upgraded'] . "</span></p>";
                 } else {
-                    if (!@ mysql_query("INSERT INTO $dbase.`" . $table_prefix . "site_plugins` (name,description,plugincode,properties,moduleguid,category) VALUES('$name','$desc','$plugin','$properties','$guid',$category);", $sqlParser->conn)) {
+                    if (!@ mysql_query("INSERT INTO $dbase.`" . $table_prefix . "site_plugins` (name,description,plugincode,properties,moduleguid,category,disabled) VALUES('$name','$desc','$plugin','$properties','$guid',$category,$disabled);", $sqlParser->conn)) {
                         echo "<p>" . mysql_error() . "</p>";
                         return;
                     }

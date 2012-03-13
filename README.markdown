@@ -1,7 +1,7 @@
 Base MODX Evolution
 ===================
 
-Сборка MODX Evolution "под себя".
+Сборка MODX Evolution 1.0.6 "под себя".
 
 Предустановленные ресурсы
 -------------------------
@@ -58,6 +58,7 @@ Base MODX Evolution
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
-* Чанки feedbackForm и feedbackReport
+* Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
 * TV параметры title, metaKeywords, metaDesc
 * TV параметры sitemap_changefreq, sitemap_priority, urlOverride
+* Возможность выключать плагины при установке добавляя (@internal @disabled 1)
