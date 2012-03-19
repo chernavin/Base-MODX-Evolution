@@ -59,6 +59,7 @@ Base MODX Evolution
 * Плагин systemField 1.3 (http://modx.com/extras/package/systemfield)
 * Сниппет sitemap 1.0.9 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
+* CodeMirror (http://community.modx-cms.ru/blog/tips_and_tricks/6499.html)
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
