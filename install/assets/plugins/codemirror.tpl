@@ -6,7 +6,7 @@
  *
  * @category 	plugin
  * @version 	2.21
- * @internal	@events OnDocFormRender, OnChunkFormRender, OnModFormRender, OnPluginFormRender, OnSnipFormRender, OnTempFormRender
+ * @internal	@events OnDocFormRender,OnChunkFormRender,OnModFormRender,OnPluginFormRender,OnSnipFormRender,OnTempFormRender
  * @internal	@modx_category Manager and Admin
  */
 
