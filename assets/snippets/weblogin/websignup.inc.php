@@ -220,7 +220,7 @@ else if ($isPostBack){
 
     // verify form code
 
-    if($useCaptcha && $_SESSION['veriword']!=$formcode) {
+    if($useCaptcha && (empty($formcode) || $_SESSION['veriword']!=$formcode)) {
 
         $output = webLoginAlert($langTXT[26],$alerttpl).$tpl;
 

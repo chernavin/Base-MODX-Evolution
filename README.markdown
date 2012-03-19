@@ -43,6 +43,7 @@ Base MODX Evolution
 * Добавлен 301 редирект FirstChildRedirect (http://community.modx-cms.ru/blog/questions/627.html#comment6754)
 * Изменены параметры TransAlias по умолчанию (russian, lowercase alphanumeric)
 * WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
+* WebSignup усилена проверка captcha
 * Ditto (http://modx-shopkeeper.ru/forum/viewtopic.php?id=266)
 * Транслитерация имён файлов при загрузке в MODx (http://www.supremum.lv/2010/04/09/transliteraciya-imyon-fajlov-pri-zagruzke-v-modx/)
 * Управление страницами вне дерева (http://community.modx-cms.ru/blog/tips_and_tricks/848.html)
