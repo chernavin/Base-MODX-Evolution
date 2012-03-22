@@ -24,7 +24,7 @@ $obect_type  = substr($evt->name, 2, 1);
 
 $mode = 'htmlmixed';
 
-$theme = 'rubyblue';
+$theme = 'eclipse';
 
 /*
  * Default Plugin configuration
