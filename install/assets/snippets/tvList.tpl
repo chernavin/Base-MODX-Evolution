@@ -5,20 +5,21 @@
  * Наполняет tv (выпадающий список) дочерними ресурсами соответствующего контейнера
  *
  * @category 	snippet
- * @version 	1.0
+ * @version 	1.1
  * @internal	@modx_category Manager and Admin
  */
 
-// @EVAL return $modx->runSnippet('categoryList', array('docid' => 1));
+// @EVAL return $modx->runSnippet('tvList', array('docid' => 1));
 
-$output = 'Выберите==0||';
-$docid = intval($docid);
-$list = $modx->getAllChildren($docid);
+$docid  = intval($docid);
+$sort   = isset($sort) ? $sort : 'menuindex';
+$dir    = isset($dir)  ? $dir  : 'ASC';
+
+$output = 'Выберите...==0||';
+$list = $modx->getAllChildren($docid, $sort, $dir);
 
 if(count($list) > 0)
 {
-    //$nbsp=chr(0xC2).chr(0xA0);
-
     foreach($list as $doc)
     {
         $output .= $doc['pagetitle'] . '==' . $doc['id'] . '||';
