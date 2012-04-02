@@ -89,11 +89,11 @@ class filter {
 				
 				// Cases 9-11 created by highlander
 				case 9 : // case insenstive version of #7 - exclude records that do not contain the text of the criterion
-					if (strpos(strtolower($value[$this->array_key]), strtolower($this->filterValue))===FALSE)
+					if (strpos(mb_strtolower($value[$this->array_key], 'utf-8'), mb_strtolower($this->filterValue, 'utf-8'))===FALSE)
 						$unset = 0;
 					break;
 				case 10 : // case insenstive version of #8 - exclude records that do contain the text of the criterion
-					if (strpos(strtolower($value[$this->array_key]), strtolower($this->filterValue))!==FALSE)
+					if (strpos(mb_strtolower($value[$this->array_key], 'utf-8'), mb_strtolower($this->filterValue, 'utf-8'))!==FALSE)
 						$unset = 0;
 					break;
 				case 11 : // checks leading character of the field

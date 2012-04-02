@@ -52,6 +52,7 @@ Base MODX Evolution
 * Убираем задежку при редактировании документов (http://community.modx-cms.ru/blog/tips_and_tricks/2580.html)
 * Исправление ошибки в mm_widget_showimagetvs (http://community.modx-cms.ru/blog/questions/2486.html#comment19549)
 * Устраняем конфликт вкладок MM с MultiPhotos и MultiFiles (http://community.modx-cms.ru/blog/addons/1232.html#comment18538)
+* Ditto &filter, сравнение без учета регистра (http://community.modx-cms.ru/blog/questions/1098.html)
 
 Добавлено в дистрибутив
 -----------------------
@@ -63,7 +64,7 @@ Base MODX Evolution
 * Сниппет sitemap 1.0.9 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
 * Плагин CodeMirror 2.23 (http://community.modx-cms.ru/blog/tips_and_tricks/6499.html)
-* Плагин customTemplate (http://community.modx-cms.ru/blog/addons/2368.html)
+* Плагин customTemplate 0.1 (http://community.modx-cms.ru/blog/addons/2368.html)
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
