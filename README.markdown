@@ -49,7 +49,8 @@ Base MODX Evolution
 * Управление страницами вне дерева (http://community.modx-cms.ru/blog/tips_and_tricks/848.html)
 * Изменен адрес XML карты сайта в robots.txt
 * Обновление безопасности (http://forums.modx.com/thread/74423/modx-evolution-1-0-5-and-prior-remote-script-execution-vulnerability#dis-post-412760)
-* Убираем задержку при редактировании документов (http://community.modx-cms.ru/blog/tips_and_tricks/2580.html)
+* Убираем задежку при редактировании документов (http://community.modx-cms.ru/blog/tips_and_tricks/2580.html)
+* Исправление ошибки в mm_widget_showimagetvs (http://community.modx-cms.ru/blog/questions/2486.html#comment19549)
 
 Добавлено в дистрибутив
 -----------------------
