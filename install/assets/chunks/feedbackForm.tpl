@@ -17,12 +17,12 @@
 	<table id="feedbackTable">
 		<tr>
 			<td class="right">Контакное лицо<span class="red">*</span>:</td>
-			<td><input type="text" name="name" size="25" eform="Контакное лицо:text:1"></td>
+			<td><input type="text" name="name" size="25" eform="Контакное лицо:string:1"></td>
 		</tr>
 		
 		<tr>
 			<td class="right">Телефон<span class="red">*</span>:</td>
-			<td><input type="text" name="phone" size="25" eform="Телефон:text:1"></td>
+			<td><input type="text" name="phone" size="25" eform="Телефон:string:1"></td>
 		</tr>
 		
 		<tr>
@@ -32,7 +32,7 @@
 		
 		<tr>
 			<td class="right">Текст сообщения<span class="red">*</span>:</td>
-			<td><textarea cols="40" rows="10" name="msg" eform="Текст сообщения:text:1"></textarea></td>
+			<td><textarea cols="40" rows="10" name="msg" eform="Текст сообщения:html:1"></textarea></td>
 		</tr>
 		
 		<tr>
