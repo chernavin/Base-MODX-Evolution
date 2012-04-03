@@ -37,6 +37,9 @@ if ($m = $modx->insideManager()) {
 	return ''; # don't go any further when inside manager
 }
 
+if(!isset($alerttpl)) $alerttpl = '';
+require $snipPath."weblogin/lang/russian-UTF-8.php";
+
 
 # Snippet customize settings
 $tpl		= isset($tpl)? $tpl:"";
@@ -50,6 +53,3 @@ include_once $snipPath."weblogin/webchangepwd.inc.php";
 
 # Return
 return $output;
-
-
-

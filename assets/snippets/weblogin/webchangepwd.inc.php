@@ -47,25 +47,25 @@ else if ($isPostBack && isset($_SESSION['webValidated'])){
 
         // verify password
         if ($passwordgenmethod=="spec" && $_POST['specifiedpassword']!=$_POST['confirmpassword']) {
-            $output = webLoginAlert("Password typed is mismatched",1).$tpl;
+            $output = webLoginAlert($langTXT[31],$alerttpl).$tpl;
             return;
         }
 
         // generate a new password for this user
         if($specifiedpassword!="" && $passwordgenmethod=="spec") {
             if(strlen($specifiedpassword) < 6 ) {
-                $output = webLoginAlert("Password is too short!").$tpl;
+                $output = webLoginAlert($langTXT[32],$alerttpl).$tpl;
                 return;
             } else {
                 $newpassword = $specifiedpassword;
             }            
         } elseif($specifiedpassword=="" && $passwordgenmethod=="spec") {
-            $output = webLoginAlert("You didn't specify a password for this user!").$tpl;
+            $output = webLoginAlert($langTXT[33],$alerttpl).$tpl;
             return;        
         } elseif($passwordgenmethod=='g') {
             $newpassword = webLoginGeneratePassword(8);        
         } else {
-            $output = webLoginAlert("No password generation method specified!").$tpl;
+            $output = webLoginAlert($langTXT[34],$alerttpl).$tpl;
             return;
         }
 
@@ -77,17 +77,17 @@ else if ($isPostBack && isset($_SESSION['webValidated'])){
                 return;
             }
             else {
-                $newpassmsg = "A copy of the new password was sent to your email address.";
+                $newpassmsg = $langTXT[35];
             }
         }
         else {
-            $newpassmsg = "The new password is <b>" . htmlspecialchars($newpassword, ENT_QUOTES) . "</b>.";
+            $newpassmsg = $langTXT[36] . " <b>" . htmlspecialchars($newpassword, ENT_QUOTES) . "</b>.";
         }
         
         // save new password to database
         $rt = $modx->changeWebUserPassword($oldpassword,$newpassword);
         if($rt!==true) {
-            $output = webLoginAlert("An error occured while saving new password: $rt");
+            $output = webLoginAlert($langTXT[37] . ": $rt",$alerttpl);
             return;
         }        
         
@@ -97,7 +97,7 @@ else if ($isPostBack && isset($_SESSION['webValidated'])){
         $output .= $tpl;
     }
     else {    
-        $output = webLoginAlert("Incorrect password. Please try again.").$tpl;
+        $output = webLoginAlert($langTXT[38],$alerttpl).$tpl;
         return;
     }
 }
@@ -112,11 +112,11 @@ function getWebChangePwdtpl(){
       <table border="0" cellpadding="1" width="300">
         <tr>
           <td><fieldset style="width:300px">
-          <legend><b>Enter your current password</b></legend>
+          <legend><b>Введите ваш текущий пароль</b></legend>
           <table border="0" cellpadding="0" style="margin-left:20px;">
             <tr>
               <td style="padding:0px 0px 0px 0px;">
-              <label for="oldpassword" style="width:120px">Current password:</label>
+              <label for="oldpassword" style="width:120px">Текущий пароль:</label>
               </td>
               <td style="padding:0px 0px 0px 0px;">
               <input type="password" name="oldpassword" size="20" /><br />
@@ -124,16 +124,14 @@ function getWebChangePwdtpl(){
             </tr>
           </table>
           </fieldset> <fieldset style="width:300px">
-          <legend><b>New password method</b></legend>
-          <input type="radio" name="passwordgenmethod" value="g" checked />Let this website 
-          generate a password.<br />
-          <input type="radio" name="passwordgenmethod" value="spec" />Let me specify 
-          the password:<br />
+          <legend><b>Способ задания нового пароля</b></legend>
+          <input type="radio" name="passwordgenmethod" value="g" checked />Позволить сайту сгенерировать пароль.<br />
+          <input type="radio" name="passwordgenmethod" value="spec" />Я сам задам пароль:<br />
           <div style="padding-left:20px">
             <table border="0" cellpadding="0">
               <tr>
                 <td style="padding:0px 0px 0px 0px;">
-                <label for="specifiedpassword" style="width:120px">New password:</label>
+                <label for="specifiedpassword" style="width:120px">Новый пароль:</label>
                 </td>
                 <td style="padding:0px 0px 0px 0px;">
                 <input type="password" name="specifiedpassword" onchange="documentdirty=true;" onkeypress="document.changepwdfrm.passwordgenmethod[1].checked=true;" size="20" /><br />
@@ -141,35 +139,32 @@ function getWebChangePwdtpl(){
               </tr>
               <tr>
                 <td style="padding:0px 0px 0px 0px;">
-                <label for="confirmpassword" style="width:120px">Confirm password:</label>
+                <label for="confirmpassword" style="width:120px">Подтвердить новый пароль:</label>
                 </td>
                 <td style="padding:0px 0px 0px 0px;">
                 <input type="password" name="confirmpassword" onchange="documentdirty=true;" onkeypress="document.changepwdfrm.passwordgenmethod[1].checked=true;" size="20" /><br />
                 </td>
               </tr>
             </table>
-            <small><span class="warning" style="font-weight:normal">The password you 
-            specify needs to be at least 6 characters long.</span></small>
+            <small><span class="warning" style="font-weight:normal">Пароль должен содержать минимум 6 символов.</span></small>
           </div>
           </fieldset><br />
           <fieldset style="width:300px">
-          <legend><b>Password notification method</b></legend>
-          <input type="radio" name="passwordnotifymethod" value="e" />Send the new password 
-          by e-mail.<br />
-          <input type="radio" name="passwordnotifymethod" value="s" checked />Show the new password 
-          on screen.
+          <legend><b>Способ уведомления о новом пароле</b></legend>
+          <input type="radio" name="passwordnotifymethod" value="e" />Послать новый пароль по e-mail.<br />
+          <input type="radio" name="passwordnotifymethod" value="s" checked />Показать новый пароль на экране.
           </fieldset></td>
         </tr>
         <tr>
-          <td align="right"><input type="submit" value="Submit" name="cmdwebchngpwd" />
-          <input type="reset" value="Reset" name="cmdreset" />
+          <td align="right"><input type="submit" value="Отправить" name="cmdwebchngpwd" />
+          <input type="reset" value="Очистить" name="cmdreset" />
           </td>
         </tr>
       </table>
     </form>
     <hr>
     <!-- notification section -->
-    Your password was successfully changed.<br /><br />
+    Ваш пароль был удачно изменён.<br /><br />
     [+newpassmsg+]
     <?php 
     $t = ob_get_contents();

@@ -368,7 +368,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>User name:*</td>
+              <td>Логин:*</td>
 
               <td>
 
@@ -378,7 +378,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Full name:</td>
+              <td>ФИО:</td>
 
               <td>
 
@@ -388,7 +388,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Email address:*</td>
+              <td>E-mail:*</td>
 
               <td>
 
@@ -398,7 +398,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Password:*</td>
+              <td>Пароль:*</td>
 
               <td>
 
@@ -408,7 +408,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Confirm password:*</td>
+              <td>Подтверждение пароля:*</td>
 
               <td>
 
@@ -418,13 +418,13 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Country:</td>
+              <td>Страна:</td>
 
               <td><select size="1" name="country" style="width:300px">
 
                 <option value="" selected>&nbsp;</option>
 
-                <option value="1">Afghanistan</option>
+                <!--option value="1">Afghanistan</option>
 
                 <option value="2">Albania</option>
 
@@ -460,11 +460,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="18">Bangladesh</option>
 
-                <option value="19">Barbados</option>
+                <option value="19">Barbados</option-->
 
-                <option value="20">Belarus</option>
+                <option value="20">Беларусь</option>
 
-                <option value="21">Belgium</option>
+                <!--option value="21">Belgium</option>
 
                 <option value="22">Belize</option>
 
@@ -554,11 +554,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="65">Equatorial Guinea</option>
 
-                <option value="66">Eritrea</option>
+                <option value="66">Eritrea</option-->
 
-                <option value="67">Estonia</option>
+                <option value="67">Эстония</option>
 
-                <option value="68">Ethiopia</option>
+                <!--option value="68">Ethiopia</option>
 
                 <option value="69">Falkland Islands (Malvinas)</option>
 
@@ -580,11 +580,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="78">Gabon</option>
 
-                <option value="79">Gambia</option>
+                <option value="79">Gambia</option-->
 
-                <option value="80">Georgia</option>
+                <option value="80">Грузия</option>
 
-                <option value="81">Germany</option>
+                <!--option value="81">Germany</option>
 
                 <option value="82">Ghana</option>
 
@@ -638,11 +638,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="107">Japan</option>
 
-                <option value="108">Jordan</option>
+                <option value="108">Jordan</option-->
 
-                <option value="109">Kazakhstan</option>
+                <option value="109">Казахстан</option>
 
-                <option value="110">Kenya</option>
+                <!--option value="110">Kenya</option>
 
                 <option value="111">Kiribati</option>
 
@@ -654,11 +654,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="115">Kyrgyzstan</option>
 
-                <option value="116">Lao People&#39;s Democratic Republic</option>
+                <option value="116">Lao People&#39;s Democratic Republic</option-->
 
-                <option value="117">Latvia</option>
+                <option value="117">Латвия</option>
 
-                <option value="118">Lebanon</option>
+                <!--option value="118">Lebanon</option>
 
                 <option value="119">Lesotho</option>
 
@@ -666,11 +666,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="121">Libyan Arab Jamahiriya</option>
 
-                <option value="122">Liechtenstein</option>
+                <option value="122">Liechtenstein</option-->
 
-                <option value="123">Lithuania</option>
+                <option value="123">Литва</option>
 
-                <option value="124">Luxembourg</option>
+                <!--option value="124">Luxembourg</option>
 
                 <option value="125">Macau</option>
 
@@ -700,11 +700,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="138">Mexico</option>
 
-                <option value="139">Micronesia, Federated States of</option>
+                <option value="139">Micronesia, Federated States of</option-->
 
-                <option value="140">Moldova, Republic of</option>
+                <option value="140">Молдова</option>
 
-                <option value="141">Monaco</option>
+                <!--option value="141">Monaco</option>
 
                 <option value="142">Mongolia</option>
 
@@ -772,11 +772,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="174">Reunion</option>
 
-                <option value="175">Romania</option>
+                <option value="175">Romania</option-->
 
-                <option value="176">Russian Federation</option>
+                <option value="176">Российская Федерация</option>
 
-                <option value="177">Rwanda</option>
+                <!--option value="177">Rwanda</option>
 
                 <option value="178">Saint Kitts and Nevis</option>
 
@@ -860,11 +860,11 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="218">Tuvalu</option>
 
-                <option value="219">Uganda</option>
+                <option value="219">Uganda</option-->
 
-                <option value="220">Ukraine</option>
+                <option value="220">Украина</option>
 
-                <option value="221">United Arab Emirates</option>
+                <!--option value="221">United Arab Emirates</option>
 
                 <option value="222">United Kingdom</option>
 
@@ -900,7 +900,7 @@ function getWebSignuptpl($useCaptcha){
 
                 <option value="238">Zambia</option>
 
-                <option value="239">Zimbabwe</option>
+                <option value="239">Zimbabwe</option-->
 
                 </select></td>
 
@@ -908,7 +908,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>State:</td>
+              <td>Область:</td>
 
               <td>
 
@@ -918,7 +918,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td>Zip:</td>
+              <td>Почтовый индекс:</td>
 
               <td>
 
@@ -930,13 +930,13 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td valign="top">Form code:*</td>
+              <td valign="top">Введите код:*</td>
 
               <td>
 
               <input type="text" name="formcode" class="inputBox" style="width:150px" size="20">
 
-              <a href="[+action+]"><img align="top" src="manager/includes/veriword.php?rand=<?php echo rand(); ?>" width="148" height="60" alt="If you have trouble reading the code, click on the code itself to generate a new random code." style="border: 1px solid #003399"></a>
+              <a href="[+action+]"><img align="top" src="manager/includes/veriword.php?rand=<?php echo rand(); ?>" width="148" height="60" alt="Если у вас возникли проблемы с прочтением кода, нажмите на картинку для генерации нового кода." style="border: 1px solid #003399"></a>
 
               </td>
 
@@ -946,7 +946,7 @@ function getWebSignuptpl($useCaptcha){
 
             <tr>
 
-              <td colspan="2">&nbsp;* - Indicates required fields</td>
+              <td colspan="2">&nbsp;* - Обязательны для заполнения</td>
 
             </tr>
 
@@ -960,9 +960,9 @@ function getWebSignuptpl($useCaptcha){
 
           <td align="right">
 
-          <input type="submit" value="Submit" name="cmdwebsignup" />
+          <input type="submit" value="Отправить" name="cmdwebsignup" />
 
-          <input type="reset" value="Reset" name="cmdreset" />
+          <input type="reset" value="Очистить" name="cmdreset" />
 
           </td>
 
@@ -988,11 +988,11 @@ function getWebSignuptpl($useCaptcha){
 
     <!-- notification section -->
 
-    <span style="font-weight:bold;">Signup completed successfully</span><br />
+    <span style="font-weight:bold;">Регистрация удачно завершена</span><br />
 
-    Your account was successfully created.<br />
+    Ваш аккаунт был удачно создан.<br />
 
-    A copy of your signup information was sent to your email address.<br /><br />
+    Копия регистрационной информация была выслана на Ваш E-mail.<br /><br />
 
     <?php 
 
