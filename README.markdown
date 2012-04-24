@@ -69,6 +69,7 @@ Base MODX Evolution
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
+* Чанк search
 * TV параметры title, metaKeywords, metaDesc
 * TV параметры sitemap_changefreq, sitemap_priority, urlOverride
 * Возможность выключать плагины при установке добавляя (@internal @disabled 1)
