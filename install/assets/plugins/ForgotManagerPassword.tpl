@@ -91,7 +91,7 @@ EOD;
             $subject = $_lang['password_change_request'];
             $headers  = "MIME-Version: 1.0\r\n".
                 "Content-type: text/html; charset=\"{$modx->config['modx_charset']}\"\r\n".
-		"From: MODx <{$modx->config['emailsender']}>\r\n".
+		"From: MODX <{$modx->config['emailsender']}>\r\n".
                 "Reply-To: no-reply@{$_SERVER['HTTP_HOST']}\r\n".
                 "X-Mailer: PHP/".phpversion();
 

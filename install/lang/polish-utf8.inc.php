@@ -1,9 +1,9 @@
 <?php
 /**
  * Filename:       /install/lang/polish-utf8.inc.php
- * Function:       MODx language File
+ * Function:       MODX language File
  * Encoding:       UTF8
- * Author:         The MODx Project Team
+ * Author:         The MODX Project Team
  * 
  * Translated by:
  *					Radosław Włodkowski - radoslaw@wlodkowski.net
@@ -13,7 +13,7 @@
  *
  * Date:           23 May 2010
  * Version:        1.0
- * MODx version:   Evolution 1.0.4
+ * MODX version:   Evolution 1.0.4
  */
 $_lang["agree_to_terms"] = 'Akceptuję warunki umowy licencyjnej';
 $_lang["alert_database_test_connection"] = 'Musisz utworzyć nową bazę danych lub sprawdzić czy wybrana przez Ciebie nazwa bazy jest poprawna!';
@@ -50,7 +50,7 @@ $_lang["checking_mysql_strict_mode"] = 'Sprawdzanie trybu "strict sql_mode" dla 
 $_lang["checking_mysql_version"] = 'Sprawdzanie wersji MySQL: ';
 $_lang["checking_php_version"] = 'Sprawdzanie wersji PHP: ';
 $_lang["checking_registerglobals"] = 'Sprawdzanie, czy zmienne globalne (Register_Globals) są wyłączone: ';
-$_lang["checking_registerglobals_note"] = 'Taka konfiguracja powoduje, że Twoja strona jest znacznie bardziej podatna na ataki typu Cross Site Scripting (XSS). Powinieneś wyłączyć tę opcję na serwerze. Są trzy podstawowe sposoby, aby to zrobić: można zmodyfikować główny plik php.ini, dodać regułę w pliku .htaccess znajdującym się w głównym folderze, w którym zainstalowany został MODx lub dodać własny plik php.ini w każdym z folderów MODxa (a jest ich sporo) z ustawieniami nadpisującymi ustawienia globalne. Jeśli nie zmienisz tych ustawień, będziesz mógł w dalszym ciągu zainstalować MODxa - pamiętaj jednak, że zostałeś ostrzeżony!';
+$_lang["checking_registerglobals_note"] = 'Taka konfiguracja powoduje, że Twoja strona jest znacznie bardziej podatna na ataki typu Cross Site Scripting (XSS). Powinieneś wyłączyć tę opcję na serwerze. Są trzy podstawowe sposoby, aby to zrobić: można zmodyfikować główny plik php.ini, dodać regułę w pliku .htaccess znajdującym się w głównym folderze, w którym zainstalowany został MODX lub dodać własny plik php.ini w każdym z folderów MODxa (a jest ich sporo) z ustawieniami nadpisującymi ustawienia globalne. Jeśli nie zmienisz tych ustawień, będziesz mógł w dalszym ciągu zainstalować MODxa - pamiętaj jednak, że zostałeś ostrzeżony!';
 $_lang["checking_sessions"] = 'Sprawdzanie, czy obsługa sesji jest skonfigurowana poprawnie: ';
 $_lang["checking_table_prefix"] = 'Sprawdzanie prefiksu tabeli `';
 $_lang["chunks"] = 'Chunki';
@@ -113,10 +113,10 @@ $_lang["installing_demo_site"] = 'Instalowanie strony demo: ';
 $_lang["language_code"] = 'pl';
 $_lang["loading"] = 'Ładowanie...';
 $_lang["modules"] = 'Moduły';
-$_lang["modx_footer1"] = '&copy; 2005-2011 <a href="http://www.modxcms.com/" target="_blank" style="color: green; text-decoration:underline">MODx</a> Content Management Framework (CMF) project. Wszystkie prawa zastrzeżone. MODx jest objęty licencją GNU GPL.';
-$_lang["modx_footer2"] = 'MODx jest wolnym oprogramowaniem. Zachęcamy Cię, abyś kreatywnie wykorzystywał MODxa w jakikolwiek sposób, który uznasz za przydatny. Prosimy jedynie, abyś pozostawił kod źródłowy otwartym i darmowym w przypadku gdy zdecydujesz się na redystrybucję MODxa w zmodyfikowanej przez siebie wersji!';
-$_lang["modx_install"] = 'MODx &raquo; Instalacja';
-$_lang["modx_requires_php"] = ', MODx wymaga PHP w wersji 4.2.0 lub nowszej';
+$_lang["modx_footer1"] = '&copy; 2005-2011 <a href="http://www.modxcms.com/" target="_blank" style="color: green; text-decoration:underline">MODX</a> Content Management Framework (CMF) project. Wszystkie prawa zastrzeżone. MODX jest objęty licencją GNU GPL.';
+$_lang["modx_footer2"] = 'MODX jest wolnym oprogramowaniem. Zachęcamy Cię, abyś kreatywnie wykorzystywał MODxa w jakikolwiek sposób, który uznasz za przydatny. Prosimy jedynie, abyś pozostawił kod źródłowy otwartym i darmowym w przypadku gdy zdecydujesz się na redystrybucję MODxa w zmodyfikowanej przez siebie wersji!';
+$_lang["modx_install"] = 'MODX &raquo; Instalacja';
+$_lang["modx_requires_php"] = ', MODX wymaga PHP w wersji 4.2.0 lub nowszej';
 $_lang["mysql_5051"] = ' MySQL w wersji 5.0.51!';
 $_lang["mysql_5051_warning"] = 'Wersja 5.0.51 MySQL posiada wiele dobrze znanych błędów, które mogą przyczynić się do nieprawidłowego działania MODxa. Zalecamy uaktualnienie MySQL przed kontynuowaniem instalacji.';
 $_lang["mysql_version_is"] = 'Wersja MySQL: ';
@@ -126,7 +126,7 @@ $_lang["not_found"] = 'nie znaleziono';
 $_lang["ok"] = 'OK!';
 $_lang["optional_items"] = 'Komponenty opcjonalne';
 $_lang["optional_items_note"] = 'Wybierz opcje instalacji, a następnie kliknij przycisk `Instaluj`: ';
-$_lang["php_security_notice"] = '<legend>Informacja dotycząca bezpieczeństwa</legend><p>Co prawda MODx będzie działał na Twojej wersji PHP, jednak używanie MODxa z tą akurat wersją nie jest zalecane. Używana przez Ciebie wersja PHP posiada wiele błędów związanych z bezpieczeństwem. Zaktualizuj PHP do wersji 4.3.8 lub nowszej, w której wyżej wymienione błędy nie występują. Zalecamy aktualizację ze względu na bezpieczeństwo Twojej strony internetowej.</p>';
+$_lang["php_security_notice"] = '<legend>Informacja dotycząca bezpieczeństwa</legend><p>Co prawda MODX będzie działał na Twojej wersji PHP, jednak używanie MODxa z tą akurat wersją nie jest zalecane. Używana przez Ciebie wersja PHP posiada wiele błędów związanych z bezpieczeństwem. Zaktualizuj PHP do wersji 4.3.8 lub nowszej, w której wyżej wymienione błędy nie występują. Zalecamy aktualizację ze względu na bezpieczeństwo Twojej strony internetowej.</p>';
 $_lang["please_correct_error"] = '. Proszę popraw błąd';
 $_lang["please_correct_errors"] = '. Proszę popraw błędy';
 $_lang["plugins"] = 'Pluginy';

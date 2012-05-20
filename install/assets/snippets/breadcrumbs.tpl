@@ -128,7 +128,7 @@
 ( isset($showHomeCrumb) ) ? $showHomeCrumb : $showHomeCrumb = 1;
 
 /* $homeId [ integer ]
- * Usually the page designated as "site start" in MODx configuration is
+ * Usually the page designated as "site start" in MODX configuration is
  * considered the home page. But if you would like to use some other document,
  * you may explicitly define it.
  */
@@ -191,7 +191,7 @@
 
 /* Templates
  * -----------------------------------------------------------------------------
- * In an effort to keep the MODx chunks manager from getting mired down in lots
+ * In an effort to keep the MODX chunks manager from getting mired down in lots
  * of templates, Breadcrumbs templates are included here. Two sets are provided
  * prefixed with defaultString, and defaultList. You can create as many more as
  * you like, each set with it's own prefix

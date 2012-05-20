@@ -201,7 +201,7 @@ if ($moduleSQLBaseFile) {
 echo "<p>" . $_lang['writing_config_file'];
 $configString = '<?php
 /**
- * MODx Configuration file
+ * MODX Configuration file
  */
 $database_type = \'mysql\';
 $database_server = \'' . $database_server . '\';
@@ -695,7 +695,7 @@ if ($installData && $moduleSQLDataFile) {
 if ($callBackFnc != "")
     $callBackFnc ($sqlParser);
 
-// Setup the MODx API -- needed for the cache processor
+// Setup the MODX API -- needed for the cache processor
 define('MODX_API_MODE', true);
 define('MODX_BASE_PATH', $base_path);
 $database_type = 'mysql';

@@ -21,7 +21,7 @@ Returns any document field or template variable from any document or any of its 
 Author: Grzegorz Adamiak [grad]
 Version: 1.3 beta @2006-11-08 14:40:04
 License: LGPL
-MODx: 0.9.2.1+
+MODX: 0.9.2.1+
 
 See GetField.txt for instructions and version history.
 --------------------------------------------------

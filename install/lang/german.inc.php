@@ -1,9 +1,9 @@
 <?php
 /**
- * MODx language File
+ * MODX language File
  *
  * @author davaeron, German translation by Marc Hinse and Bogdan Günther
- * @package MODx
+ * @package MODX
  * @version 2.0
  * @translation
  * Filename:       /install/lang/german.inc.php
@@ -29,8 +29,8 @@
 	$_lang["btnback_value"] = 'zurück';
 	$_lang["btnclose_value"] = 'Schließen';
 	$_lang["btnnext_value"] = 'Weiter';
-	$_lang["cant_write_config_file"] = 'MODx konnte die Konfigurationsdatei nicht erstellen. Bitte fügen Sie folgendes in eine leere Datei ein:';
-	$_lang["cant_write_config_file_note"] = 'Sobald dieser Vorgang beendet ist, können Sie sich im MODx-Manager anmelden unter http://ihredomain.de/manager/.';
+	$_lang["cant_write_config_file"] = 'MODX konnte die Konfigurationsdatei nicht erstellen. Bitte fügen Sie folgendes in eine leere Datei ein:';
+	$_lang["cant_write_config_file_note"] = 'Sobald dieser Vorgang beendet ist, können Sie sich im MODX-Manager anmelden unter http://ihredomain.de/manager/.';
 	$_lang["checkbox_select_options"] = 'Checkbox-Auswahlmöglichkeiten:';
 	$_lang["checking_if_cache_exist"] = 'Überprüfen ob Ordner <span class="mono">assets/cache</span> existiert: ';
 	$_lang["checking_if_cache_file2_writable"] = 'Überprüfen ob die Datei <span class="mono">assets/cache/sitePublishing.idx.php</span> beschreibbar ist: ';
@@ -45,7 +45,7 @@
 	$_lang["checking_mysql_version"] = 'Überprüfe MySQL-Version: ';
 	$_lang["checking_php_version"] = 'Überprüfe PHP-Version: ';
 	$_lang["checking_registerglobals"] = 'Überprüfe ob PHP register_globals ausgeschaltet sind: ';
-	$_lang["checking_registerglobals_note"] = 'Diese Konfiguration macht Ihre Website angreifbarer für Cross Site Scripting (XSS) Attacken. Sie sollten mit Ihrem Provider sprechen, ob diese Einstellung geändert werden kann. Es gibt normalerweise drei Möglichkeiten: Ändern der globalen php.ini, Hinzufügen von Regeln zu der .htaccess-Datei im Root-Verzeichnis der MODx-Installation oder durch Hinzufügen einer angepassten php.ini in jedem Verzeichnis Ihrer MODx-Installation. Sie können MODx trotzdem installieren, aber Sie müssen sich den möglichen Sicherheitsrisiken bewusst sein.'; //Look at changing this to provide a solution.
+	$_lang["checking_registerglobals_note"] = 'Diese Konfiguration macht Ihre Website angreifbarer für Cross Site Scripting (XSS) Attacken. Sie sollten mit Ihrem Provider sprechen, ob diese Einstellung geändert werden kann. Es gibt normalerweise drei Möglichkeiten: Ändern der globalen php.ini, Hinzufügen von Regeln zu der .htaccess-Datei im Root-Verzeichnis der MODX-Installation oder durch Hinzufügen einer angepassten php.ini in jedem Verzeichnis Ihrer MODX-Installation. Sie können MODX trotzdem installieren, aber Sie müssen sich den möglichen Sicherheitsrisiken bewusst sein.'; //Look at changing this to provide a solution.
 	$_lang["checking_sessions"] = 'Überprüfe ob die Sessions sauber definiert sind: ';
 	$_lang["checking_table_prefix"] = 'Überprüfe Tabellen-Präfixe `';
 	$_lang["chunks"] = 'Chunks';
@@ -53,7 +53,7 @@
 	$_lang["connection_screen_collation"] = 'Kollation:';
 	$_lang["connection_screen_connection_method"] = 'Verbindungsmethode:';
 	$_lang["connection_screen_database_connection_information"] = 'Datenbankinformationen';
-	$_lang["connection_screen_database_connection_note"] = 'Bitte geben Sie den Namen der Datenbank an, die Sie für MODx nutzen wollen. Falls die Datenbank nicht existiert, wird MODx versuchen sie zu erstellen. Dies kann fehlschlagen, falls Sie nicht die nötigen Rechte besitzen. Bei vielen Web-Hosting-Angeboten sind die Datenbanken bereits eingerichtet oder können in der Administrationsoberfläche des Web-Hosting-Angebots erstellt werden. Notieren Sie diesen Namen und geben Sie ihn hier ein.';
+	$_lang["connection_screen_database_connection_note"] = 'Bitte geben Sie den Namen der Datenbank an, die Sie für MODX nutzen wollen. Falls die Datenbank nicht existiert, wird MODX versuchen sie zu erstellen. Dies kann fehlschlagen, falls Sie nicht die nötigen Rechte besitzen. Bei vielen Web-Hosting-Angeboten sind die Datenbanken bereits eingerichtet oder können in der Administrationsoberfläche des Web-Hosting-Angebots erstellt werden. Notieren Sie diesen Namen und geben Sie ihn hier ein.';
 	$_lang["connection_screen_database_host"] = 'Datenbank-Host:';
 	$_lang["connection_screen_database_info"] = 'Datenbank-Information';
 	$_lang["connection_screen_database_login"] = 'Datenbank-Login-Name:';
@@ -62,7 +62,7 @@
 	$_lang["connection_screen_database_test_connection"] = 'Klicken Sie hier, um die Datenbank zu erstellen bzw. um die Verbinding zu testen.';
 	$_lang["connection_screen_default_admin_email"] = 'Administrator-E-Mail:';
 	$_lang["connection_screen_default_admin_login"] = 'Administrator-Benutzername:';
-	$_lang["connection_screen_default_admin_note"] = 'Bitte geben Sie weitere Details zu Ihren Administrator-Benutzerkonto an. Sie können Ihren Namen eingeben und ein Passwort, dass Sie nicht vergessen. Diese Daten benötigen Sie für die Anmeldung im MODx-Manager (dem MODx-Adminbereich) nach dem die Installation abgeschlossen ist.';
+	$_lang["connection_screen_default_admin_note"] = 'Bitte geben Sie weitere Details zu Ihren Administrator-Benutzerkonto an. Sie können Ihren Namen eingeben und ein Passwort, dass Sie nicht vergessen. Diese Daten benötigen Sie für die Anmeldung im MODX-Manager (dem MODX-Adminbereich) nach dem die Installation abgeschlossen ist.';
 	$_lang["connection_screen_default_admin_password"] = 'Administrator-Passwort:';
 	$_lang["connection_screen_default_admin_password_confirm"] = 'Passwort bestätigen:';
 	$_lang["connection_screen_default_admin_user"] = 'Standard Administrator-Konto';
@@ -75,8 +75,8 @@
 	$_lang["database_alerts"] = 'Datenbank Meldungen!';
 	$_lang["database_connection_failed"] = 'Datenbank-Verbindung fehlgeschlagen!';
 	$_lang["database_connection_failed_note"] = 'Bitte Überprüfen Sie Ihre Datenbank-Anmeldung und versuchen Sie es erneut.';
-	$_lang["default_language"] = 'Standard-Sprache MODx-Manager';
-	$_lang["default_language_description"] = 'Das ist die voreingestellte Sprache die im MODx-Manager (dem MODx-Adminbereich) verwendet wird.';
+	$_lang["default_language"] = 'Standard-Sprache MODX-Manager';
+	$_lang["default_language_description"] = 'Das ist die voreingestellte Sprache die im MODX-Manager (dem MODX-Adminbereich) verwendet wird.';
 	$_lang["database_use_failed"] = 'Datenbank konnte nicht ausgewählt werden!';
 	$_lang["database_use_failed_note"] = 'Bitte prüfen Sie den Datenbankzugang für den gewählten Benutzer und versuchen Sie es erneut.';
 	$_lang["during_execution_of_sql"] = ' während des Ausführens des SQL-Statements ';
@@ -86,7 +86,7 @@
 	$_lang["failed"] = 'fehlgeschlagen!';
 	$_lang["help"] = 'Hilfe!';
 	$_lang["help_link"] = 'http://www.modxcms.de/forum/';
-	$_lang["help_title"] = 'Unterstützung zur Installation finden Sie in den MODx-Foren';
+	$_lang["help_title"] = 'Unterstützung zur Installation finden Sie in den MODX-Foren';
 	$_lang["iagree_box"] = 'Ich stimme den Lizenzbedingungen zu.';
 	$_lang["install"] = 'Installieren';
 	$_lang["install_overwrite"] = 'Installieren/Überschreiben';
@@ -97,7 +97,7 @@
 	$_lang["installation_install_new_note"] = 'Beachten Sie, dass diese Option alle Daten in der Datenbank überschreibt.';
 	$_lang["installation_mode"] = 'Installationsmodus';
 	$_lang["installation_new_installation"] = 'Neue Installation';
-	$_lang["installation_note"] = '<b>Achtung:</b> Nach dem Anmelden im MODx-Manager sollten Sie die Konfigurationseinstellungen unter <b>Werkzeuge &gt; Konfiguration</b> vornehmen und speichern bevor Sie Ihre Seite aufrufen.';
+	$_lang["installation_note"] = '<b>Achtung:</b> Nach dem Anmelden im MODX-Manager sollten Sie die Konfigurationseinstellungen unter <b>Werkzeuge &gt; Konfiguration</b> vornehmen und speichern bevor Sie Ihre Seite aufrufen.';
 	$_lang["installation_successful"] = 'Installation war erfolgreich!';
 	$_lang["installation_upgrade_advanced"] = 'Upgrade Installation für Fortgeschrittene<br /><small>(Anpassung der Datenbank-Konfiguration)</small>';
 	$_lang["installation_upgrade_advanced_note"] = 'For fortgeschrittene Datenbank-Administratoren oder bei Umzug auf einen Server mit anderem Datenbank-Zeichensatz oder anderer Datenbank-Kollation. <b>Sie müssen die vollständigen Datenbank-Anmeldedaten sowie den Datenbank-Zeichensatz und die Datenbank-Kollation kennen.</b>';
@@ -108,10 +108,10 @@
 	$_lang["language_code"] = 'de';
 	$_lang["loading"] = 'Laden …';
 	$_lang["modules"] = 'Module';
-	$_lang["modx_footer1"] = '&copy; 2005-2011 <a href="http://www.modxcms.com/" target="_blank" style="color: green; text-decoration:underline">MODx</a> Content Mangement Framework (CMF) Projekt. Alle Rechte vorbehalten. MODx ist unter der GNU GPL lizenziert.';
-	$_lang["modx_footer2"] = 'MODx is freie Software.  Wir ermutigen Sie, kreativ zu sein und MODx so zu nutzen wie es Ihnen am besten passt. Stellen Sie nur sicher, dass Sie bei Veränderungen des Quellcodes und der Weiterverbreitung der modifizierten MODx-Version den Quelltext frei zugänglich belassen!';
-	$_lang["modx_install"] = 'MODx &raquo; Installation';
-	$_lang["modx_requires_php"] = ', und MODx benötigt PHP 4.2.0. oder höher';
+	$_lang["modx_footer1"] = '&copy; 2005-2011 <a href="http://www.modxcms.com/" target="_blank" style="color: green; text-decoration:underline">MODX</a> Content Mangement Framework (CMF) Projekt. Alle Rechte vorbehalten. MODX ist unter der GNU GPL lizenziert.';
+	$_lang["modx_footer2"] = 'MODX is freie Software.  Wir ermutigen Sie, kreativ zu sein und MODX so zu nutzen wie es Ihnen am besten passt. Stellen Sie nur sicher, dass Sie bei Veränderungen des Quellcodes und der Weiterverbreitung der modifizierten MODX-Version den Quelltext frei zugänglich belassen!';
+	$_lang["modx_install"] = 'MODX &raquo; Installation';
+	$_lang["modx_requires_php"] = ', und MODX benötigt PHP 4.2.0. oder höher';
 	$_lang["mysql_5051"] = 'Warnung: MySQL-Server-Version ist 5.0.51!';
 	$_lang["mysql_5051_warning"] = 'MySQL-Server-Version ist 5.0.51 hat bekannte Bugs. Es wird empfohlen ein Update auf eine neuere Version durchzuführen bevor Sie fortfahren.';
 	$_lang["mysql_version_is"] = ' Ihre MySQL-Version ist: ';
@@ -120,13 +120,13 @@
 	$_lang["ok"] = 'OK!';
 	$_lang["optional_items"] = 'Optionale Einstellungen';
 	$_lang["optional_items_note"] = 'Bitte wählen Sie Ihre Installationsoptionen und klicken Sie auf Install:';
-	$_lang["php_security_notice"] = '<legend>Sicherheitshinweis</legend><p>MODx wird mit Ihrer PHP-Version wohl laufen, unter dieser PHP-Version wird die Benutzung von MODx nicht empfohlen. Ihre Version von PHP ist angreifbar aufgrund verschiedener Sicherheitslöcher. Bitte führen Sie ein Update auf PHP-Version 4.4.1. oder höher durch, um die Sicherheitsprobleme zu beheben.</p>';
+	$_lang["php_security_notice"] = '<legend>Sicherheitshinweis</legend><p>MODX wird mit Ihrer PHP-Version wohl laufen, unter dieser PHP-Version wird die Benutzung von MODX nicht empfohlen. Ihre Version von PHP ist angreifbar aufgrund verschiedener Sicherheitslöcher. Bitte führen Sie ein Update auf PHP-Version 4.4.1. oder höher durch, um die Sicherheitsprobleme zu beheben.</p>';
 	$_lang["please_correct_error"] = '. Bitte korrigieren Sie den Fehler';
 	$_lang["please_correct_errors"] = '. Bitte korrigieren Sie die Fehler';
 	$_lang["plugins"] = 'Plugins';
 	$_lang["preinstall_validation"] = 'Prüfung vor der Installation';
 	$_lang["remove_install_folder_auto"] = 'Installationsordner löschen<br />&nbsp;(Dies erfordert die entsprechenden Zugriffsrechte um den Ordner löschen zu können).';
-	$_lang["remove_install_folder_manual"] = 'Bitte denken Sie daran den Ordner <b>install</b> zu löschen bevor Sie sich im MODx-Manager anmelden.';
+	$_lang["remove_install_folder_manual"] = 'Bitte denken Sie daran den Ordner <b>install</b> zu löschen bevor Sie sich im MODX-Manager anmelden.';
 	$_lang["retry"] = 'Nochmal versuchen';
 	$_lang["running_database_updates"] = 'Führe Datenbank-Updates durch: ';
 	$_lang["sample_web_site"] = 'Beispiel-Website';
@@ -135,7 +135,7 @@
 	$_lang["session_problem_try_again"] = 'Erneut versuchen?'; 
 	$_lang["setup_cannot_continue"] = 'Leider kann die Installation wegen oben aufgeführter Gründe nicht fortgesetzt werden.';
 	$_lang["setup_couldnt_install"] = 'Die Tabellen in der gewählten Datenbank konnten nicht angelegt/geändert werden.';
-	$_lang["setup_database"] = 'Die MODx-Installation wird nun versuchen die Datenbank einzurichten:<br />';
+	$_lang["setup_database"] = 'Die MODX-Installation wird nun versuchen die Datenbank einzurichten:<br />';
 	$_lang["setup_database_create_connection"] = 'Verbindung zur Datenbank: ';
 	$_lang["setup_database_create_connection_failed"] = 'Datenbank-Verbindung fehlgeschlagen!';
 	$_lang["setup_database_create_connection_failed_note"] = 'Bitte prüfen Sie die Datenbank-Anmeldedaten und versuchen Sie es erneut.';
@@ -159,7 +159,7 @@
 	$_lang["status_passed_database_created"] = 'In Ordnung – Datenbank erstellt';
 	$_lang["status_passed_server"] = 'In Ordung – Kollationen sind nun auswählbar';
 	$_lang["strict_mode"] = 'Warnung: MySQL-Server hat „sql_mode strict“ aktiviert';
-	$_lang["strict_mode_error"] = 'Bestimmte MODx-Funktionen funktionieren nicht korrekt solange „STRICT_TRANS_TABLES sql_mode“ aktiviert ist. Sie können den MySQL-Modus ändern, in dem Sie die Datei „my.cnf“ anpassen oder Ihren Server-Administrator kontaktieren.';
+	$_lang["strict_mode_error"] = 'Bestimmte MODX-Funktionen funktionieren nicht korrekt solange „STRICT_TRANS_TABLES sql_mode“ aktiviert ist. Sie können den MySQL-Modus ändern, in dem Sie die Datei „my.cnf“ anpassen oder Ihren Server-Administrator kontaktieren.';
 	$_lang["summary_setup_check"] = 'Es wird überprüft, ob alles für die Installation bereit ist.';
 	$_lang["table_prefix_already_inuse"] = ' – Tabellen-Präfix wird bereits benutzt!';
 	$_lang["table_prefix_already_inuse_note"] = 'Die gewählte Datenbank konnte nicht beschrieben werden, da der Tabellen-Präfix bereits verwendet wird. Bitte wählen Sie einen anderen Präfix und wiederholen Sie die Installation.';
@@ -176,11 +176,11 @@
 	$_lang["unable_install_template"] = 'Konnte Template nicht installieren.  Datei';
 	$_lang["upgrade_note"] = '<b>Achtung:</b> Nach dem Anmelden im Manager sollten Sie die Konfigurationseinstellungen unter <b>Werkzeuge &gt; Konfiguration</b> überprüfen und speichern bevor Sie Ihre Seite aufrufen.';
 	$_lang["upgraded"] = 'Aktualisiert';
-	$_lang["visit_forum"] = ', besuchen Sie die <a href="http://www.modxcms.de/forum/" target="_blank">MODx-Foren</a>.';
+	$_lang["visit_forum"] = ', besuchen Sie die <a href="http://www.modxcms.de/forum/" target="_blank">MODX-Foren</a>.';
 	$_lang["warning"] = 'ACHTUNG!';
 	$_lang["welcome_message_start"] = 'Wählen Sie zunächst den Intallationstyp aus:';
 	$_lang["welcome_message_text"] = 'Dieses Programm wird Sie durch die Installation begleiten.';
-	$_lang["welcome_message_welcome"] = 'Willkommen beim MODx-Installationsprogramm.';
+	$_lang["welcome_message_welcome"] = 'Willkommen beim MODX-Installationsprogramm.';
 	$_lang["writing_config_file"] = 'Schreibe Konfigurationsdatei: ';
 	$_lang["you_running_php"] = ' – Benutzte PHP-Version ';
 ?>
