@@ -18,7 +18,7 @@
  * 		Grant French (grant@mcpuk.net)
  */
 
-// ** START FOR MODx
+// ** START FOR MODX
 
 require_once('../../../../../includes/protect.inc.php');
 
@@ -41,7 +41,7 @@ include("../../../../../includes/config.inc.php");
 startCMSSession(); 
 if(!isset($_SESSION['mgrValidated'])) {
 	if(!isset($_SESSION['webValidated'])){
-		die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODx Content Manager instead of accessing this file directly.");
+		die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODX Content Manager instead of accessing this file directly.");
 	}
 }
 
@@ -78,7 +78,7 @@ $upload_flash = explode(',',$upload_flash);
 $fckphp_config['modx']['file_permissions'] = octdec($new_file_permissions);
 $fckphp_config['modx']['folder_permissions'] = octdec($new_folder_permissions);
 $fckphp_config['modx']['charset'] = $settings['modx_charset'];
-// ** END FOR MODx
+// ** END FOR MODX
 
 
 /*------------------------------------------------------------------------------*/

@@ -48,20 +48,20 @@ class Auth {
 						
 						if (!file_exists($top)) {
 							mkdir($top,0777) or die("users folder in UserFilesPath does not exist and could not be created.");
-							@chmod($top,$fckphp_config['modx']['folder_permissions']); // modified for MODx
+							@chmod($top,$fckphp_config['modx']['folder_permissions']); // modified for MODX
 						}
 						
 						//Create folder if it doesnt exist
 						if (!file_exists($up)) {
 							mkdir($up,0777) or die("users/".$decArray[2]." folder in UserFilesPath does not exist and could not be created.");
-							@chmod($up,$fckphp_config['modx']['folder_permissions']); //Just for good measure - modified for MODx
+							@chmod($up,$fckphp_config['modx']['folder_permissions']); //Just for good measure - modified for MODX
 						}
 						
 						//Create resource area subfolders if they dont exist
 						foreach ($fckphp_config['ResourceTypes'] as $value) {
 							if (!file_exists("$up/$value")) {
 								mkdir("$up/$value",0777) or die("users/".$decArray[2]."/$value folder in UserFilesPath does not exist and could not be created.");
-								@chmod("$up/$value",$fckphp_config['modx']['folder_permissions']); //Just for good measure - modified for MODx
+								@chmod("$up/$value",$fckphp_config['modx']['folder_permissions']); //Just for good measure - modified for MODX
 							}
 						}
 						$fckphp_config['authSuccess']=true;

@@ -67,7 +67,7 @@ class CreateFolder {
 					//Make the directory
 					if (mkdir($newdir,0777)) {
 						$err_no=0; //Success
-						@chmod($newdir,$this->fckphp_config['modx']['folder_permissions']); //added for MODx
+						@chmod($newdir,$this->fckphp_config['modx']['folder_permissions']); //added for MODX
 					} else {
 					
 						$err_no=110; //Unknown error

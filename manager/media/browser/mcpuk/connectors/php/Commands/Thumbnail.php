@@ -69,15 +69,15 @@ class Thumbnail {
 				if ($result!==false) {
 					if (function_exists("imagejpeg")) {
 						imagejpeg($result,$thumbfile,70);
-						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODx
+						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODX
 						$icon=$thumbfile;
 					} elseif (function_exists("imagepng")) {
 						imagepng($result,$thumbfile);
-						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODx
+						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODX
 						$icon=$thumbfile;
 					} elseif (function_exists("imagegif")) {
 						imagegif($result,$thumbfile);
-						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODx
+						@chmod($thumbfile,$this->fckphp_config['modx']['file_permissions']); //modified for MODX
 						$icon=$thumbfile;
 					} else {
 						$icon=iconLookup($mime,$ext);

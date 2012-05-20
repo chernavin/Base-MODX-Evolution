@@ -1,5 +1,5 @@
 <?php
-if(IN_MANAGER_MODE!="true") die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODx Content Manager instead of accessing this file directly.");
+if(IN_MANAGER_MODE!="true") die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODX Content Manager instead of accessing this file directly.");
 if(!$modx->hasPermission('export_static')) {
 	$e->setError(3);
 	$e->dumpError();
@@ -231,7 +231,7 @@ echo '<p>'.$_lang['export_site_message'].'</p>';
 				$dircontent[] = $row['alias'];
 			}
 		}
-		// remove No-MODx files/dirs 
+		// remove No-MODX files/dirs 
 		if (!scanDirectory($dirpath, $dircontent)) exit;
 //		print_r ($dircontent);
 	}

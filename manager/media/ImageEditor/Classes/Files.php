@@ -76,11 +76,11 @@ class Files
 	 * @param string $newFolder specifiy the full path of the new folder.
 	 * @return boolean true if the new folder is created, false otherwise.
 	 */
-	function createFolder($newFolder,$mode = 0777) //add $mode for MODx
+	function createFolder($newFolder,$mode = 0777) //add $mode for MODX
 	{
 		global $IMConfig;
 		mkdir ($newFolder, 0777);
-		return chmod($newFolder,  $mode); //modified for MODx
+		return chmod($newFolder,  $mode); //modified for MODX
 	}
 
 

@@ -6,13 +6,13 @@
  * Author:         modx.cn leepoooo@163.com
  * Date:           Jun 8, 2009
  * Version:        0.1 (from English Ver1.6)
- * MODx version:   Evoltuion 1.0
+ * MODX version:   Evoltuion 1.0
 */
 $modx_lang_attribute = 'zh'; // Manager HTML and XML Language Attribute
 $modx_manager_charset = 'gb2312';
 
 $_lang["about"] = '关于MODX';
-$_lang["about_msg"] = 'MODx is a <a href= "http://modxcms.com/what-is-modx.html" target= "_blank">PHP Application Framework and Content Management System</a> licensed under the <a href="../assets/docs/license.txt">GNU GPL</a>.';
+$_lang["about_msg"] = 'MODX is a <a href= "http://modxcms.com/what-is-modx.html" target= "_blank">PHP Application Framework and Content Management System</a> licensed under the <a href="../assets/docs/license.txt">GNU GPL</a>.';
 $_lang["about_title"] = '关于MODx';
 $_lang["access_permission_denied"] = '你没有访问这文档的权限。'; 
 $_lang["access_permission_parent_denied"] = '你不允许在这里建立文档！';
@@ -106,7 +106,7 @@ $_lang["configcheck_default_msg"] = '发生不知名的错误.';
 $_lang["configcheck_images"] = '图象目录不可写';
 $_lang["configcheck_images_msg"] = '图象目录不可写或不存在，图象管理功能将不能运行！';
 $_lang["configcheck_installer"] = '安装程序没删除';
-$_lang["configcheck_installer_msg"] = 'The install/ directory contains the installer for MODx. Just imagine what might happen if an evil person finds this folder and runs the installer! He\'d probably not get too far, because he\'ll need to enter some user information for the database, but it\'s still best to remove this folder from your server.';
+$_lang["configcheck_installer_msg"] = 'The install/ directory contains the installer for MODX. Just imagine what might happen if an evil person finds this folder and runs the installer! He\'d probably not get too far, because he\'ll need to enter some user information for the database, but it\'s still best to remove this folder from your server.';
 $_lang["configcheck_lang_difference"] = '语言文件行数不正确';
 $_lang["configcheck_lang_difference_msg"] = '当前选择的文件和默认的文件的语言行数不一样，这虽然不构成什么问题，但以为着你的语言文件需要更新了。';
 $_lang["configcheck_notok"] = '一个或多个配置未通过设置: ';
@@ -234,7 +234,7 @@ $_lang["export_site_failed"] = '失败！';
 $_lang["export_site_html"] = '输出整个站点成为HTML文档';
 $_lang["export_site_maxtime"] = '最大输出时间：';
 $_lang["export_site_maxtime_message"] = '你可以在这里设置MODx输出整个站点的最大时间，(覆盖PHP的设置).输入0表示时间无限制. 不过请注意，如果你输入0或时间过大，你的服务器或许会发生很奇怪的现象而不能访问，因此我们不建议设置0，最好把时间控制在你的服务器允许范围内。';
-$_lang["export_site_message"] = '使用这个功能，你可以将整个站点转化为HTML文件.注意：无论如何你都将失去MODX所提供的很多功能:<p><ul><li>Page reads on the exported files will not be recorded.</li><li>切片功能将不能工作。</li><li>只有普通文件能够被输出，网站连接也不能输出。</li><li>如果你的文档中有切片使用了重定向功能，那文档也不能输出。</li><li>Depending on how you\'ve written your documents, style sheets and images, the design of your site may be broken. To fix this, you can save/move your exported files to the same directory where the main MODx index.php file is located.</li></ul></p><p>Please fill out the form and press \'Export\' to start the export process. The files created will be saved in the location you specify, using, where possible, the document\'s aliases as filenames. While exporting your site, it\'s best to have the MODx configuration item \'Friendly aliases\' set to \'yes\'. Depending on the size of your site, the export may take a while.</p><p><b>Any existing files will be overwritten by the new files if their names are identical!</b></p>';
+$_lang["export_site_message"] = '使用这个功能，你可以将整个站点转化为HTML文件.注意：无论如何你都将失去MODX所提供的很多功能:<p><ul><li>Page reads on the exported files will not be recorded.</li><li>切片功能将不能工作。</li><li>只有普通文件能够被输出，网站连接也不能输出。</li><li>如果你的文档中有切片使用了重定向功能，那文档也不能输出。</li><li>Depending on how you\'ve written your documents, style sheets and images, the design of your site may be broken. To fix this, you can save/move your exported files to the same directory where the main MODX index.php file is located.</li></ul></p><p>Please fill out the form and press \'Export\' to start the export process. The files created will be saved in the location you specify, using, where possible, the document\'s aliases as filenames. While exporting your site, it\'s best to have the MODX configuration item \'Friendly aliases\' set to \'yes\'. Depending on the size of your site, the export may take a while.</p><p><b>Any existing files will be overwritten by the new files if their names are identical!</b></p>';
 $_lang["export_site_numberdocs"] = '<p>发现<b> %s文档要输出...</b></p>';
 $_lang["export_site_prefix"] = '文档前缀:';
 $_lang["export_site_start"] = '开始输出';
@@ -254,7 +254,7 @@ $_lang["file_not_saved"] = '文件不能保存，请确认目的文件目录是否可写！';
 $_lang["file_saved"] = '文件上传成功！';
 $_lang["file_unzip"] = '解压成功！';
 $_lang["file_unzip_fail"] = '解压失败！';
-$_lang["filemanager_path_message"] = 'IIS often does not populate the document_root setting properly, which is used by the file manager to determine what you can look at. If you\'re having problems using the file manager, make sure this path points to the root of your MODx installation.';
+$_lang["filemanager_path_message"] = 'IIS often does not populate the document_root setting properly, which is used by the file manager to determine what you can look at. If you\'re having problems using the file manager, make sure this path points to the root of your MODX installation.';
 $_lang["filemanager_path_title"] = '文件管理路径:';
 $_lang["files_access_denied"] = '拒绝访问！';
 $_lang["files_data"] = '数据';
@@ -289,7 +289,7 @@ $_lang["files_viewfile"] = '查阅文件';
 $_lang["folder"] = '文件夹';
 $_lang["forward"] = '向前';
 $_lang["friday"] = '星期五';
-$_lang["friendly_alias_message"] = '如果你在使用friendly URLs， 并且文件有别名， the alias will always have precedence over the friendly URL. By setting this option to \'yes\', the friendly URL prefix and suffix will also be applied to the alias. For example, if your document with ID 1 has an alias of `introduction`, and you\'ve set a prefix of `` and a suffix of `.html`, setting this option to `yes` will generate `introduction.html`. If there\'s no alias, MODx will generate `1.html` as link.';
+$_lang["friendly_alias_message"] = '如果你在使用friendly URLs， 并且文件有别名， the alias will always have precedence over the friendly URL. By setting this option to \'yes\', the friendly URL prefix and suffix will also be applied to the alias. For example, if your document with ID 1 has an alias of `introduction`, and you\'ve set a prefix of `` and a suffix of `.html`, setting this option to `yes` will generate `introduction.html`. If there\'s no alias, MODX will generate `1.html` as link.';
 $_lang["friendly_alias_title"] = '使用友好别名friendly aliases:';
 $_lang["friendlyurls_message"] = '这个设置将允许使用友好URL以便于搜索引擎的工作，这个设置只工作在Apache服务器下, 另外你将需要写一个.htaccess. 详细情况请查阅.htaccess文件。';
 $_lang["friendlyurls_title"] = '起用友好URLs:';
@@ -542,7 +542,7 @@ $_lang["password_method"] = '密码确认方法';
 $_lang["password_method_email"] = '通过e-mail发送密码.';
 $_lang["password_method_screen"] = '在屏幕上显示密码.';
 $_lang["password_msg"] = ' <b>%s</b>的新密码是 <b>%s</b>.';
-$_lang["php_version_check"] = 'MODx兼容PHP 4.0.3 和更高的版本，请升级PHP版本！';
+$_lang["php_version_check"] = 'MODX兼容PHP 4.0.3 和更高的版本，请升级PHP版本！';
 $_lang["plugin"] = '插件';
 $_lang["plugin_code"] = '插件代码 (php)';
 $_lang["plugin_config"] = '插件配置';
@@ -563,9 +563,9 @@ $_lang["published_folder"] = 'This is a published folder.';
 $_lang["published_weblink"] = 'This is a published weblink.';
 $_lang["published_weblink_folder"] = 'This is a published weblink folder.';
 $_lang["rank"] = '评级';
-$_lang["rb_base_dir_message"] = 'Enter the physical path to the resource directory. This setting is usually automatically generated. If you\'re using IIS, however, MODx may not be able to work the path out on it\'s own, causing the Resource Browser to show an error. In that case, you can enter the path to the images directory here (the path as you\'d see it in Windows Explorer). <b>NOTE:</b> The resource directory must contain the subfolders images, files, flash and media in order for the resource browser to function correctly.';
+$_lang["rb_base_dir_message"] = 'Enter the physical path to the resource directory. This setting is usually automatically generated. If you\'re using IIS, however, MODX may not be able to work the path out on it\'s own, causing the Resource Browser to show an error. In that case, you can enter the path to the images directory here (the path as you\'d see it in Windows Explorer). <b>NOTE:</b> The resource directory must contain the subfolders images, files, flash and media in order for the resource browser to function correctly.';
 $_lang["rb_base_dir_title"] = '资源路径:';
-$_lang["rb_base_url_message"] = 'Enter the virtual path to resource directory. This setting is usually automatically generated. If you\'re using IIS, however, MODx may not be able to work the URL out on it\'s own, causing the Resource Browser to show an error. In that case, you can enter the URL to the images directory here (the URL as you\'d enter it on Internet Explorer).';
+$_lang["rb_base_url_message"] = 'Enter the virtual path to resource directory. This setting is usually automatically generated. If you\'re using IIS, however, MODX may not be able to work the URL out on it\'s own, causing the Resource Browser to show an error. In that case, you can enter the URL to the images directory here (the URL as you\'d enter it on Internet Explorer).';
 $_lang["rb_base_url_title"] = '资源的URL:';
 $_lang["rb_message"] = 'Select yes to enable the resource browser. This will allow your users to browse and upload resources such as images, flash and media files on the server.';
 $_lang["rb_title"] = '激活资源浏览器:';
@@ -749,7 +749,7 @@ $_lang["settings_page_settings"] = '页面设置';
 $_lang["settings_photo"] = '图片';
 $_lang["settings_properties"] = '属性';
 $_lang["settings_site"] = '站点设置';
-$_lang["settings_strip_image_paths_message"] = '开启这个选项后，MODx将把图象的路径由绝对定位改为相对的定位。这个功能将方便你的站点变迁移动或域名变换等，如果你不知道它代表什么意思的话，那你就选择\'否No\'。';
+$_lang["settings_strip_image_paths_message"] = '开启这个选项后，MODX将把图象的路径由绝对定位改为相对的定位。这个功能将方便你的站点变迁移动或域名变换等，如果你不知道它代表什么意思的话，那你就选择\'否No\'。';
 $_lang["settings_strip_image_paths_title"] = '重写图象路径？';
 $_lang["settings_templvars"] = '模板变量';
 $_lang["settings_title"] = '系统配置';

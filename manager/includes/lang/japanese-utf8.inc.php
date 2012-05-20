@@ -6,14 +6,14 @@
  * Author:         eastbind, MEGU, yamamoto
  * Date:           2010/12/19
  * Version:        2.0.7
- * MODx version:   Evolution 1.0.5J
+ * MODX version:   Evolution 1.0.5J
 */
 //$modx_textdir = 'rtl'; // uncomment this line for RTL langauges
 $modx_lang_attribute = 'ja'; // Manager HTML and XML Language Attribute
 $modx_manager_charset = 'UTF-8';
 
-$_lang["about_msg"] = '<p>MODx(モドエックスまたはモッドエックス)は <a href="http://ja.wikipedia.org/wiki/MODx" target="_blank">PHP アプリケーション フレームワーク・コンテンツ管理システム</a>です。<a href="../assets/docs/license.txt">GNU GPL</a> に基づいて使用が許諾されます。</p>';
-$_lang["about_title"] = 'MODx について';
+$_lang["about_msg"] = '<p>MODX(モドエックスまたはモッドエックス)は <a href="http://ja.wikipedia.org/wiki/MODX" target="_blank">PHP アプリケーション フレームワーク・コンテンツ管理システム</a>です。<a href="../assets/docs/license.txt">GNU GPL</a> に基づいて使用が許諾されます。</p>';
+$_lang["about_title"] = 'MODX について';
 $_lang["access_permission_denied"] = 'このリソースにアクセスする権限がありません。';
 $_lang["access_permission_parent_denied"] = 'ここにリソースを作成する権限がありません。';
 $_lang["access_permissions"] = '所属グループ';
@@ -178,7 +178,7 @@ $_lang["create_resource_title"] = 'リソースの作成';
 $_lang["create_weblink_here"] = '新規作成 (ウェブリンク)';
 $_lang["createdon"] = '作成日時';
 $_lang["credits"] = '著作権表示/謝辞';
-$_lang["credits_shouts_msg"] = '<p>MODx is managed and maintained at <a href="http://modxcms.com/about/" target="_blank">MODxCMS.com</a>.</p>';
+$_lang["credits_shouts_msg"] = '<p>MODX is managed and maintained at <a href="http://modxcms.com/about/" target="_blank">MODxCMS.com</a>.</p>';
 $_lang["custom_contenttype_message"] = 'リソースが使用するコンテントタイプに独自のタイプを追加できます。新しいタイプを追加するにはテキストボックスに入力して「追加」ボタンをクリックします。';
 $_lang["custom_contenttype_title"] = 'カスタムコンテントタイプ ';
 $_lang["database_charset"] = 'データベース文字コード';
@@ -369,7 +369,7 @@ $_lang["go"] = '実行';
 $_lang["group_access_permissions"] = 'ユーザーグループのアクセス';
 $_lang["guid"] = 'GUID';
 $_lang["help"] = 'ヘルプ';
-$_lang["help_msg"] = '<p><a href="http://modxcms-jp.com/bb/" target="_blank">MODx日本公式フォーラム</a>でサポートを得ることができます。 また、逐次執筆が進められている<a href="http://modxcms.com/documentation" target="_blank">MODxドキュメントとガイド（英語）</a>があり、MODx のほぼすべてに関して記されています。</p>';
+$_lang["help_msg"] = '<p><a href="http://modxcms-jp.com/bb/" target="_blank">MODx日本公式フォーラム</a>でサポートを得ることができます。 また、逐次執筆が進められている<a href="http://modxcms.com/documentation" target="_blank">MODxドキュメントとガイド（英語）</a>があり、MODX のほぼすべてに関して記されています。</p>';
 $_lang["help_title"] = 'サポート';
 $_lang["hide_tree"] = 'サイトツリーを非表示';
 $_lang["home"] = 'ダッシュボード';
@@ -444,7 +444,7 @@ $_lang["login_captcha_message"] = '画像で表示されるセキュリティコ
 $_lang["login_homepage"] = 'ログインするホームページ';
 $_lang["login_homepage_message"] = 'ログインしたウェブユーザーに対して表示するリソースのIDを入力してください。<br /><strong>※非公開のリソースは指定できません。また該当ユーザーがアクセス権限をもつリソースに限ります。</strong>';
 $_lang["login_message"] = 'MODxへようこそ。ログイン名とパスワードは大文字・小文字を区別します。';
-$_lang["logo_slogan"] = 'MODx Content Manager - \nCreate and do more with less';
+$_lang["logo_slogan"] = 'MODX Content Manager - \nCreate and do more with less';
 $_lang["logout"] = 'ログアウト';
 $_lang["long_title"] = 'タイトル';
 $_lang["mail_check_timeperiod_message"] = '<a href="index.php?a=10">メッセージ機能</a>のメッセージチェックの間隔を「秒」で指定します';
@@ -533,7 +533,7 @@ $_lang["modules"] = 'モジュール';
 $_lang["modx_news"] ='MODxの最新情報';
 $_lang["modx_news_tab"] ='MODxの最新情報';
 $_lang["modx_news_title"] ='MODxの最新情報';
-$_lang["modx_security_notices"] ='MODx セキュリティ情報';
+$_lang["modx_security_notices"] ='MODX セキュリティ情報';
 $_lang["modx_version"] = 'MODxバージョン';
 $_lang["monday"] = '月';
 $_lang["move"] = '移動';
@@ -820,10 +820,10 @@ $_lang["role_view_unpublished"] = '未公開のリソースの閲覧';
 $_lang["role_web_access_persmissions"] = 'ウェブアクセス許可';
 $_lang["role_web_user_management"] = 'ウェブユーザー管理';
 $_lang["rss_url_news_default"] = 'http://feeds2.feedburner.com/modxjp';
-$_lang["rss_url_news_message"] = '管理画面トップの「MODx News」のフィードURL';
+$_lang["rss_url_news_message"] = '管理画面トップの「MODX News」のフィードURL';
 $_lang["rss_url_news_title"] = 'RSS ニュースフィード';
 $_lang["rss_url_security_default"] = 'http://feeds2.feedburner.com/modxjpsec';
-$_lang["rss_url_security_message"] = '管理画面トップの「MODx Security」のフィードURL';
+$_lang["rss_url_security_message"] = '管理画面トップの「MODX Security」のフィードURL';
 $_lang["rss_url_security_title"] = 'RSS セキュリティ情報フィード';
 $_lang["run_module"] = 'モジュールの実行';
 $_lang["saturday"] = '土';

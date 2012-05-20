@@ -1,6 +1,6 @@
 <?php
 
-// ** START FOR MODx
+// ** START FOR MODX
 
 require_once('../../includes/protect.inc.php');
 
@@ -13,7 +13,7 @@ include "../../includes/config.inc.php";
  */
 startCMSSession();  
 if(!isset($_SESSION['mgrValidated'])) {
-	die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODx Content Manager instead of accessing this file directly.");
+	die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODX Content Manager instead of accessing this file directly.");
 }
 // connect to the database
 if(@!$modxDBConn = mysql_connect($database_server, $database_user, $database_password)) {
@@ -30,7 +30,7 @@ include("../../includes/user_settings.inc.php");// Override system settings with
 
 $IMConfig['modx']['folder_permissions'] = octdec($new_folder_permissions);
 
-// ** END FOR MODx
+// ** END FOR MODX
 	
 /**
  * Image Manager configuration file.
