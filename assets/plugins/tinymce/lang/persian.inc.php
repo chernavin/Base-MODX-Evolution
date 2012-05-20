@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield
  * Date:           2007/04/09
  * Version:        2.1.0
- * MODx version:   0.9.6
+ * MODX version:   0.9.6
 */
 
 $_lang['tinymce_editor_theme_title'] = "پوسته:";

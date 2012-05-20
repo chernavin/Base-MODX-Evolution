@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield
  * Date:           2010/03/10
  * Version:        3.3
- * MODx version:   0.9.5-1.0.2
+ * MODX version:   0.9.5-1.0.2
 */
 
 $_lang['tinymce_editor_theme_title'] = "Teema:";

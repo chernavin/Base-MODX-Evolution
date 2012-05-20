@@ -3,7 +3,7 @@
 defined('IN_MANAGER_MODE') or die();
 
 //***********************************
-//TVimageResizer plugin v1.9.4.2 for MODx Evolution 1.x
+//TVimageResizer plugin v1.9.4.2 for MODX Evolution 1.x
 //Used EasyPhpThumbnail class by JF Nutbroek
 //***********************************
 //Andchir  http://wdevblog.net.ru

@@ -4,7 +4,7 @@
  * Filename:       assets/snippets/ditto/lang/russian.inc.php
  * Language:       Russian
  * Encoding:       Windows-1251
- * Translated by:  Russian MODx community, Jaroslav Sidorkin, based on translation by modx.ru
+ * Translated by:  Russian MODX community, Jaroslav Sidorkin, based on translation by modx.ru
  * Date:           27 July 2009
  * Version:        2.1.0
 */
@@ -54,7 +54,7 @@ $_lang['dateFormat'] = "%d.%b.%y %H:%M";
 
 $_lang['info'] = "Информация";
 
-$_lang['modx'] = "MODx";
+$_lang['modx'] = "MODX";
 
 $_lang['fields'] = "Поля";
 

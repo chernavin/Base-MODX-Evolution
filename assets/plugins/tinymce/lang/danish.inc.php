@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield
  * Date:           2010/03/10
  * Version:        3.3
- * MODx version:   0.9.5-1.0.2
+ * MODX version:   0.9.5-1.0.2
 */
 
 $_lang['tinymce_editor_theme_title'] = "Theme:";
@@ -20,7 +20,7 @@ $_lang['tinymce_editor_css_selectors_message'] = "Here you can enter a list of s
 $_lang['tinymce_settings'] = "TinyMCE Settings";
 $_lang['tinymce_theme_simple'] = "Simple";
 $_lang['tinymce_theme_advanced'] = "Advanced";
-$_lang['tinymce_theme_editor'] = 'MODx Style';
+$_lang['tinymce_theme_editor'] = 'MODX Style';
 $_lang['tinymce_theme_custom'] = "Custom";
 $_lang['tinymce_theme_creative'] = 'Creative';
 $_lang['tinymce_theme_logic'] = 'xhtml';

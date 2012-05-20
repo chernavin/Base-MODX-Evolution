@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield / translated by Marc Hinse
  * Date:           2007/04/17
  * Version:        2.0.9
- * MODx version:   0.9.6
+ * MODX version:   0.9.6
 */
 
 include_once(dirname(__FILE__).'/english.inc.php'); // fallback for missing defaults or new additions

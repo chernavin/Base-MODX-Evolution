@@ -6,7 +6,7 @@
  * Author:         French community
  * Date:           2007/04/13, corrected on 28/07/09
  * Version:        2.1.0
- * MODx version:   Evolution 1.0
+ * MODX version:   Evolution 1.0
 */
 
 include_once(dirname(__FILE__).'/english.inc.php'); // fallback for missing defaults or new additions

@@ -4,7 +4,7 @@
  *
  * Propósito: Contiene las secuencias de la lengua para el uso en el módulo.
  * Autores: Traducido por LucianoAFerrer, verificado y corregido por ARES1983
- * Para: MODx CMS (www.modxcms.com)
+ * Para: MODX CMS (www.modxcms.com)
  * Fecha:18/04/2007 Version: 1.6
  *
  */

@@ -5,7 +5,7 @@
  * Encoding:       UTF-8
  * Author:         Jeff Whitfield / translated by Victor Safronovich
  * Date:           13.01.2010
- * MODx version:   1.0.5
+ * MODX version:   1.0.5
  */
 
 $_lang['tinymce_editor_theme_title'] = "Тема WYSIWYG-редактора:";

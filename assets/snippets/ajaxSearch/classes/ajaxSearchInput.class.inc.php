@@ -355,7 +355,7 @@ class AjaxSearchInput {
         return $string;
     }
     /*
-    *  stripTags : Remove MODx sensitive tags
+    *  stripTags : Remove MODX sensitive tags
     */
     function _stripTags($text) {
 

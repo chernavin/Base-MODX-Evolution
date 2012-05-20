@@ -8,7 +8,7 @@
 *               Stefan van Zanden (18-07-2009 Small changes to conform language used in the manager)
 * Date:         2009/07/18
 * Version:      2.1.0
-* MODx version: Evolution 1.0
+* MODX version: Evolution 1.0
 */
 
 $_lang['tinymce_editor_theme_title'] = "Thema:";

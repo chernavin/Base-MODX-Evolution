@@ -6,7 +6,7 @@
  * Author:         French community
  * Date:           2007/04/13
  * Version:        2.1.0
- * MODx version:   0.9.6
+ * MODX version:   0.9.6
 */
 
 include_once(dirname(__FILE__).'/english.inc.php'); // fallback for missing defaults or new additions

@@ -3,7 +3,7 @@
     @name       ManagerManager
     @version    0.3.9
     
-    @for        MODx Evolution 1.0.x
+    @for        MODX Evolution 1.0.x
     
     @author     Nick Crossland - www.rckt.co.uk
     

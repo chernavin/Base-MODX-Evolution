@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield
  * Date:           2007/01/06
  * Version:        2.1.0
- * MODx version:   0.9.6
+ * MODX version:   0.9.6
  *
  * Translation:    Pontus Ågren (Pont)
  * Date:           2007-03-13

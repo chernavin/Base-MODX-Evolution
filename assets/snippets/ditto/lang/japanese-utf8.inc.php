@@ -3,7 +3,7 @@
  * Filename:       assets/snippets/ditto/lang/japanese-utf-8.inc.php
  * Function:       Default Japanese language file for Ditto.
  * Encoding:       UTF-8
- * Author:         MODx CMS JAPAN and phize.net
+ * Author:         MODX CMS JAPAN and phize.net
  * Date:           2009/07/25
 */
 $_lang['language'] = "japanese-utf8";
@@ -32,7 +32,7 @@ $_lang['dateFormat'] = "%Y/%m/%d %H:%M";
 
 // Debug Tab Names
 $_lang['info'] = "情報";
-$_lang['modx'] = "MODx";
+$_lang['modx'] = "MODX";
 $_lang['fields'] = "フィールド";
 $_lang['templates'] = "テンプレート";
 $_lang['filters'] = "フィルタ";

@@ -1,6 +1,6 @@
 <?php
 /**
- * MODx language File for Eform
+ * MODX language File for Eform
  *
  * @author Henrik Nielsen
  * @package Eform 1.4.4.6

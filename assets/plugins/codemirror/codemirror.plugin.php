@@ -6,10 +6,10 @@
  * @released    Mar 29, 2012
  * @CodeMirror  2.23
  *
- * @required    MODx 0.9.6.3+
+ * @required    MODX 0.9.6.3+
  *              CodeMirror  2.23 : pl
  *
- * @confirmed   MODx Evolution 1.0.6
+ * @confirmed   MODX Evolution 1.0.6
  *
  * @author      hansek from www.modxcms.cz  <http://www.modxcms.cz>
  *

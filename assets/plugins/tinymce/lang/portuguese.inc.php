@@ -6,7 +6,7 @@
  * Author:         Jeff Whitfield - translation João Peixoto (joeindio@gmail.com)
  * Date:           2007/04/09
  * Version:        2.0.9
- * MODx version:   0.9.5
+ * MODX version:   0.9.5
 */
 
 $_lang['tinymce_editor_theme_title'] = "Tema:";

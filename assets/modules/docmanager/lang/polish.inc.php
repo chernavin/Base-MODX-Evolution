@@ -4,7 +4,7 @@
  * 
  * Purpose: Contains the language strings for use in the module.
  * Author: £ukasz Kowalczyk // www.pixeligence.pl
- * For: MODx CMS (www.modxcms.com)
+ * For: MODX CMS (www.modxcms.com)
  * Date:10/12/2006 Version: 0.9.5
  * 
  */

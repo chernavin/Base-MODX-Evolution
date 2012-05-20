@@ -1,7 +1,7 @@
 <?php
 
 // Retrieved from http://wiki.modxcms.com/index.php/PHx/CustomModifiers
-// description: parse bb code (also escapes all html and MODx tags characters)
+// description: parse bb code (also escapes all html and MODX tags characters)
 // usage: [+variable:bbcode+] 
  
 $string = preg_replace("/&amp;(#[0-9]+|[a-z]+);/i", "&$1;", htmlspecialchars($output));

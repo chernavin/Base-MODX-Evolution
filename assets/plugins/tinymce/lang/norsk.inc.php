@@ -1,6 +1,6 @@
 <?php/* * Filename:       assets/plugins/tinymce/lang/norwegian.inc.php * Function:       Norwegian language file for TinyMCE.  Needs to be translated and re-encoded! * Encoding:       ISO-Latin-1 * Author:         Jeff Whitfield * Date:           2007/01/06
  * Version:        2.0.9
- * MODx version:   0.9.5
+ * MODX version:   0.9.5
 */
 include_once(dirname(__FILE__).'/english.inc.php'); // fallback for missing defaults or new additions$_lang['tinymce_editor_theme_title'] = "Theme:";
 $_lang['tinymce_editor_theme_message'] = "Here you can select which theme or skin to use with the editor.";

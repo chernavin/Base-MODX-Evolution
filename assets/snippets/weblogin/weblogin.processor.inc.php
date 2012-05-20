@@ -212,9 +212,9 @@ $table_prefix = $modx->dbConfig['table_prefix'];
             
             
             /*
-            if (!ini_get('safe_mode')) $sent = mail($email, "Пароль для доступа на сайт", $message, "Content-type: text/plain; charset=".$modx->config['modx_charset']."\r\n"."From: ".$emailsender."\r\n"."X-Mailer: MODx Content Manager - PHP/".phpversion(), "-f {$emailsender}");
+            if (!ini_get('safe_mode')) $sent = mail($email, "Пароль для доступа на сайт", $message, "Content-type: text/plain; charset=".$modx->config['modx_charset']."\r\n"."From: ".$emailsender."\r\n"."X-Mailer: MODX Content Manager - PHP/".phpversion(), "-f {$emailsender}");
 
-            else $sent = mail($email, "Пароль для доступа на сайт", $message, "Content-type: text/plain; charset=".$modx->config['modx_charset']."\r\n"."From: ".$emailsender."\r\n"."X-Mailer: MODx Content Manager - PHP/".phpversion());
+            else $sent = mail($email, "Пароль для доступа на сайт", $message, "Content-type: text/plain; charset=".$modx->config['modx_charset']."\r\n"."From: ".$emailsender."\r\n"."X-Mailer: MODX Content Manager - PHP/".phpversion());
 
             if(!$sent) {
 
