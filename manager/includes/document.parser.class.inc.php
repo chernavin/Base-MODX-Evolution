@@ -2793,7 +2793,17 @@ class DocumentParser {
         header('HTTP/1.1 500 Internal Server Error');
 
         // Display error
-        echo $parsedMessageString;
+        //echo $parsedMessageString;
+        
+        if(isset($_SESSION['mgrValidated']))
+        {
+        	echo $parsedMessageString;
+        }
+        else
+        {
+        	echo 'Fatal error.';
+        }
+        
         ob_end_flush();
 
         // Log error
