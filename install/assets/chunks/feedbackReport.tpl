@@ -11,7 +11,7 @@
 
 <table>
 	<tr>
-		<td style="text-align:right;vertical-align:top"><b>Контакное лицо:</b></td>
+		<td style="text-align:right;vertical-align:top"><b>Контактное лицо:</b></td>
 		<td>[+name+]</td>
 	</tr>
 	

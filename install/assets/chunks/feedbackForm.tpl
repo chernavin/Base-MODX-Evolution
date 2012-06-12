@@ -16,7 +16,7 @@
 	
 	<table id="feedbackTable">
 		<tr>
-			<td class="right">Контакное лицо<span class="red">*</span>:</td>
+			<td class="right">Контактное лицо<span class="red">*</span>:</td>
 			<td><input type="text" name="name" size="25" eform="Контакное лицо:string:1"></td>
 		</tr>
 		
