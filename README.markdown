@@ -70,7 +70,7 @@ Base MODX Evolution
 * Плагин TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
 * Сниппет и плагин MultiPhotos 1.2.4 (http://community.modx-cms.ru/blog/addons/1146.html)
 * Плагин systemField 1.3 (http://modx.com/extras/package/systemfield)
-* Сниппет sitemap 1.0.9 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
+* Сниппет sitemap 1.0.10 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
 * Плагин CodeMirror 2.23 (http://community.modx-cms.ru/blog/tips_and_tricks/6499.html)
 * Плагин customTemplate 0.1 (http://community.modx-cms.ru/blog/addons/2368.html)
