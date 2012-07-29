@@ -36,7 +36,7 @@ $auto_big = isset($auto_big)&&($auto_big=='true') ? 1 : 0;
 $auto_small = isset($auto_small)&&($auto_small=='true') ? 1 : 0;
 
 $lang['insert']='Вставить';
-$lang['url']='Адрес:';
+$lang['url']='Путь:';
 $lang['link']='Ссылка или большая картинка:';
 $lang['title']='Название:';
 
@@ -45,7 +45,7 @@ if ($e->name == 'OnDocFormRender') {
 require_once(MODX_MANAGER_PATH.'includes/tmplvars.inc.php');
 $modx_script = renderFormElement('image',0,'','','');
 preg_match('/(<script[^>]*?>.*?<\/script>)/si', $modx_script, $matches);
-$output = $matches[0];
+$output = $matches ? $matches[0] : '';
 $output .= <<< OUT
 <!-- MultiPhotos -->
 <style type="text/css">
@@ -65,13 +65,13 @@ var MultiPhotos = new Class({
 		this.box = new Element('div',{'class':'fotoEditor'});
 		this.fid.getParent().adopt(this.box);
 		this.foto=0;
-		this.lastfoto='';
 		for (var f=0;f<hpArr.length;f++) this.addItem(hpArr[f]);
 		if (typeof(SetUrl) != 'undefined') {
 			this.OrigSetUrl = SetUrl;				
 			SetUrl = function(url, width, height, alt) {
+				var lastfoto = lastImageCtrl;
 				this.OrigSetUrl(url, width, height, alt);
-				if ($(this.lastfoto)!=null) $(this.lastfoto).fireEvent('change');
+				if ($(lastfoto)!=null) $(lastfoto).fireEvent('change');
 			}.bind(this)
 		}
 		this.sort=new Sortables(this.box,{
@@ -98,7 +98,7 @@ var MultiPhotos = new Class({
 				if (url != "") {
 					new Element('div',{'class':'fotoimg','id':'foto_'+this.name+'_'+f+'_'+'PrContainer','styles':{'width':'{$w}px'}}).injectTop(rowDiv).adopt(
 						new Element('img',{'src':url,'styles':{ $style },'events':{
-							'click':function(){this.lastfoto='foto_'+this.name+'_'+f; BrowseServer('foto_'+this.name+'_'+f)}.bind(this)
+							'click':function(){BrowseServer('foto_'+this.name+'_'+f)}.bind(this)
 						}})
 					);
 				}
@@ -106,13 +106,13 @@ var MultiPhotos = new Class({
 			}.bind(this)
 		}});
 		var bInsert = new Element('input',{'type':'button','value':'{$lang['insert']}','events':{
-			'click':function(){this.lastfoto='foto_'+this.name+'_'+f; BrowseServer('foto_'+this.name+'_'+f)}.bind(this)
+			'click':function(){BrowseServer('foto_'+this.name+'_'+f)}.bind(this)
 		}});
 		var linkURL = new Element('input',{'type':'text','name':'link_'+this.name+'_'+f,'id':'link_'+this.name+'_'+f,'class':'imageField','value':values[1],'events':{
 			'change':function(){this.setEditor();}.bind(this)
 		}});
 		var bInsertLink = new Element('input',{'type':'button','value':'{$lang['insert']}','events':{
-			'click':function(){this.lastfoto='link_'+this.name+'_'+f; BrowseServer('link_'+this.name+'_'+f)}.bind(this)
+			'click':function(){BrowseServer('link_'+this.name+'_'+f)}.bind(this)
 		}});
 		var imgName = new Element('input',{'type':'text','class':'imageField','value':values[2],'events':{
 			'keyup':function(){this.setEditor();documentDirty=true;}.bind(this)
@@ -155,15 +155,15 @@ if ($e->name == 'OnBeforeDocFormSave'){
 $tvIds=explode(',',$tvIds);
 foreach ($tvIds as $tvid) {
 	if (empty($th_width) && empty($th_height)) return;
-	if (!$resize || !isset($tmplvars[$tvid]) || empty($tmplvars[$tvid][1])) return;
+	if (!$resize || !isset($tmplvars[$tvid]) || empty($tmplvars[$tvid][1])) continue;
 	$fotoArr=json_decode($tmplvars[$tvid][1]);
-	set_time_limit(0);
+	@set_time_limit(0);
 	foreach ($fotoArr as $k=>&$v) {
 		if (!empty($v[1]) && $auto_small) $v[0]=$v[1];
 		if (!empty($v[0])){
 			$filename = basename($v[0]);
-			if (!($auto_small && !empty($v[1])) && $prefix==substr($filename, 0, strlen($prefix))) continue;
 			$dirname = str_replace($filename,'',$v[0]);
+			if (!($auto_small && !empty($v[1])) && ($prefix==substr($filename, 0, strlen($prefix)) || $prefix==substr($dirname, -strlen($prefix)))) continue;
 			$new_path = '../'.$dirname.$prefix.$filename;
 			$imgInfo = @getImageSize('../'.$v[0]);
 			if (!is_array($imgInfo)) continue;

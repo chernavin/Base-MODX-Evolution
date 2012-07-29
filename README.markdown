@@ -68,7 +68,7 @@ Base MODX Evolution
 * Сниппет GetField 1.3 (http://modx.com/extras/package/getfield)
 * Плагин PHx 2.1.4 (http://modx.com/extras/package/phx), убираем лишние запросы PHx к БД (http://community.modx-cms.ru/blog/solutions/768.html)
 * Плагин TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
-* Сниппет и плагин MultiPhotos 1.2.4 (http://community.modx-cms.ru/blog/addons/1146.html)
+* Сниппет и плагин MultiPhotos 1.2.6 (http://community.modx-cms.ru/blog/addons/1146.html)
 * Плагин systemField 1.3 (http://modx.com/extras/package/systemfield)
 * Сниппет sitemap 1.0.10 (﻿﻿﻿﻿﻿﻿http://modx.com/extras/package/sitemap)
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
