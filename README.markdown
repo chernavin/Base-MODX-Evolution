@@ -65,7 +65,7 @@ Base MODX Evolution
 
 Добавлено в дистрибутив
 -----------------------
-* Сниппет GetField 1.3 (http://modx.com/extras/package/getfield)
+* Сниппет DocInfo 1.0 (http://community.modx-cms.ru/blog/fast-solution/6543.html#comment43842)
 * Плагин PHx 2.1.4 (http://modx.com/extras/package/phx), убираем лишние запросы PHx к БД (http://community.modx-cms.ru/blog/solutions/768.html)
 * Плагин TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
 * Сниппет и плагин MultiPhotos 1.2.6 (http://community.modx-cms.ru/blog/addons/1146.html)
