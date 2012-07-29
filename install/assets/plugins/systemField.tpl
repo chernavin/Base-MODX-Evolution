@@ -2,7 +2,7 @@
 /**
  * systemField
  * 
- * The plugin allows you to add "system" data in a separate field, which will be displayed along with the page content
+ * The plugin allows you to add «system» data in a separate field, which will be displayed along with the page content
  *
  * @category 	plugin
  * @version 	1.3
@@ -15,7 +15,7 @@
 
 systemField 1.3 plugin for MODX Evo
 
-The plugin allows you to add "system" data in a separate field, which will be displayed along with the page content.
+The plugin allows you to add «system» data in a separate field, which will be displayed along with the page content.
 
 by Andhir
 
