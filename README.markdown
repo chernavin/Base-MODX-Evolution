@@ -36,10 +36,14 @@ Base MODX Evolution
 * Шаблон MODxHost
 * Чанк WebLoginSideBar
 * Чанк mm_demo_rules
+* Директория assets/templates/help
+* Скрипты frankensleight.js и csshover3.htc, файл README.txt из директории assets/js
+* Директории assets/plugins/managermanager/docs, assets/snippets/ajaxSearch/documentation, assets/snippets/eform/docs, assets/snippets/wayfinder/examples
 
 Обновлено в дистрибутиве
 ------------------------
 
+* Слово MODx заменено на MODX
 * Добавлен 301 редирект FirstChildRedirect (http://community.modx-cms.ru/blog/questions/627.html#comment6754)
 * Изменены параметры TransAlias по умолчанию (russian, lowercase alphanumeric)
 * WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
@@ -55,11 +59,14 @@ Base MODX Evolution
 * Устраняем конфликт вкладок MM с MultiPhotos и MultiFiles (http://community.modx-cms.ru/blog/addons/1232.html#comment18538)
 * Ditto &filter, сравнение без учета регистра (http://community.modx-cms.ru/blog/questions/1098.html)
 * Ditto, отключение постраничной навигации если 1 страница (https://github.com/dmi3yy/modx.evo.custom/commit/5cf730a9d170a5c8a4dcff10736fa519adab1f73#diff-13)
+* Отключены сообщения об ошибках для не manager пользователей
+* Добавлена возможность смотреть расход памяти
+* Обновлён класс PHPMailer
 
 Добавлено в дистрибутив
 -----------------------
 * Сниппет GetField 1.3 (http://modx.com/extras/package/getfield)
-* Плагин PHx 2.1.4 (http://modx.com/extras/package/phx)
+* Плагин PHx 2.1.4 (http://modx.com/extras/package/phx), убираем лишние запросы PHx к БД (http://community.modx-cms.ru/blog/solutions/768.html)
 * Плагин TVimageResizer 1.9.4 (http://modx.com/extras/package/tvimageresizer)
 * Сниппет и плагин MultiPhotos 1.2.4 (http://community.modx-cms.ru/blog/addons/1146.html)
 * Плагин systemField 1.3 (http://modx.com/extras/package/systemfield)
