@@ -23,7 +23,7 @@ if(!class_exists('ForgotManagerPassword')) {
             global $_lang;
   
             $link = <<<EOD
-<a id="ForgotManagerPassword-show_form" href="index.php?action=show_form">{$_lang['forgot_your_password']}</a>
+<div><a id="ForgotManagerPassword-show_form" href="index.php?action=show_form">{$_lang['forgot_your_password']}</a></div>
 EOD;
 
             return $link;
@@ -145,10 +145,10 @@ EOD;
         }
 
         function getErrorOutput() {
-            $output = '';
+            $output = '<style>.error{color:#f00;}</style>';
 
             if($this->errors) {
-                $output = '<span class="error">'.implode('</span><span class="errors">', $this->errors).'</span>';
+                $output .= '<span class="error">'.implode('</span><span class="errors">', $this->errors).'</span>';
             }
   
             return $output;
