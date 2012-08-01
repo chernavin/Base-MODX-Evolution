@@ -12,7 +12,7 @@
 mm_widget_showimagetvs();
 
 //mm_createTab('SEO', 'seoTab');
-//mm_moveFieldsToTab('title,metaKeywords,metaDesc,sitemap_changefreq,sitemap_priority,urlOverride', 'seoTab');
+//mm_moveFieldsToTab('title,metaKeywords,metaDesc,sitemap_changefreq,sitemap_priority,urlOverride,noIndex', 'seoTab');
 //mm_widget_tags('metaKeywords', ',');
 
 mm_renameField('log', 'Дочерние ресурсы отображаются в дереве');
