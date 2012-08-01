@@ -1,6 +1,6 @@
 //<?php
 /**
- * phx 
+ * PHx 
  * 
  * (Placeholders Xtended) Adds the capability of output modifiers when using placeholders, template variables and settings tags
  *

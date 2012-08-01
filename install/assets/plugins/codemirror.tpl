@@ -10,8 +10,8 @@
  * @package modx
  * @author hansek from www.modxcms.cz <http://www.modxcms.cz>
  * @internal @events OnDocFormRender,OnChunkFormRender,OnModFormRender,OnPluginFormRender,OnSnipFormRender,OnTempFormRender
- * @internal @modx_category
- * @internal @properties &theme=Theme;list;,cobalt,eclipse,elegant,monokai,neat,night,rubyblue;eclipse &indentUnit=Indent unit;int;4 &tabSize=The width of a tab character;int;4
+ * @internal @modx_category Manager and Admin
+ * @internal @properties &theme=Theme;list;,cobalt,eclipse,elegant,monokai,neat,night,rubyblue; &indentUnit=Indent unit;int;4 &tabSize=The width of a tab character;int;4
  */
 
 /**
