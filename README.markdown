@@ -62,6 +62,8 @@ Base MODX Evolution
 * Отключены сообщения об ошибках для не manager пользователей
 * Добавлена возможность смотреть расход памяти
 * Обновлён класс PHPMailer
+* Исправление верстки в плагине Forgot Manager Login
+* Добавлена директива php_flag magic_quotes_gpc off в .htaccess 
 
 Добавлено в дистрибутив
 -----------------------
@@ -79,5 +81,5 @@ Base MODX Evolution
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
 * Чанк search
 * TV параметры title, metaKeywords, metaDesc
-* TV параметры sitemap_changefreq, sitemap_priority, urlOverride
+* TV параметры sitemap_changefreq, sitemap_priority, urlOverride, noIndex
 * Возможность выключать плагины при установке добавляя (@internal @disabled 1)

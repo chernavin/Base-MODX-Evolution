@@ -9,6 +9,7 @@
  * @internal 	@modx_category eForm
  */
 
+<p>Подробности сообщения:</p>
 <table>
 	<tr>
 		<td style="text-align:right;vertical-align:top"><b>Контактное лицо:</b></td>
