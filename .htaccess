@@ -4,6 +4,7 @@
 # and especially for the first three commented out rules
 
 php_flag register_globals Off
+php_flag magic_quotes_gpc Off
 AddDefaultCharset utf-8
 php_value date.timezone Europe/Moscow
 
