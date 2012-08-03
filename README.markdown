@@ -39,6 +39,7 @@ Base MODX Evolution
 * Директория assets/templates/help
 * Скрипты frankensleight.js и csshover3.htc, файл README.txt из директории assets/js
 * Директории assets/plugins/managermanager/docs, assets/snippets/ajaxSearch/documentation, assets/snippets/eform/docs, assets/snippets/wayfinder/examples
+* Редко используемые языки, оставлены языки - Русский, Английский, Французкий, Немецкий, Итальянский, Испанский
 
 Обновлено в дистрибутиве
 ------------------------
@@ -79,7 +80,7 @@ Base MODX Evolution
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
-* Чанк search
+* Чанки search, benchmark
 * TV параметры title, metaKeywords, metaDesc
 * TV параметры sitemap_changefreq, sitemap_priority, urlOverride, noIndex
 * Возможность выключать плагины при установке добавляя (@internal @disabled 1)
