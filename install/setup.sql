@@ -870,8 +870,9 @@ REPLACE INTO `{PREFIX}site_templates` (`id`, `templatename`, `description`, `edi
 REPLACE INTO `{PREFIX}site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `haskeywords`, `hasmetatags`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`) VALUES
 (1, 'document', 'text/html', 'Главная', '', '', 'index', '', 1, 0, 0, 0, 0, '', '', 1, 4, 0, 1, 1, 1, 1130304721, 1, 1321514136, 0, 0, 0, 1130304721, 1, '', 0, 0, 0, 0, 0, 0, 0),
 (2, 'document', 'text/html', 'Системные страницы', '', '', 'system', '', 0, 0, 0, 0, 1, '', '', 0, 0, 100, 0, 0, 1, 1321441110, 1, 1321514208, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 1),
-(3, 'document', 'text/html', 'Страница не существует', '', '', '404', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница не существует.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 2, 100, 0, 1, 1, 1321441207, 1, 1321514221, 0, 0, 0, 1321441207, 1, '', 0, 0, 0, 0, 0, 0, 1),
-(4, 'document', 'text/html', 'Страница закрыта для просмотра', '', '', '403', '', 1, 0, 0, 2, 0, '', '<div style="margin: 10px auto; width: 480px; border: 5px solid #A00; text-align: center;">\r\n<h2>[*pagetitle*]</h2>\r\n<p>\r\nЗапрошенная вами страница закрыта для просмотра.\r\n</p>\r\n<p>\r\n<a href="[(site_url)][~1~]">Вернуться на главную</a>\r\n</p>\r\n</div>', 1, 2, 99, 0, 1, 1, 1322479027, 1, 1322479027, 0, 0, 0, 1322479027, 1, '', 0, 0, 0, 0, 0, 0, 1),
+(3, 'document', 'text/html', 'Страница не существует', '', '', '404', '', 1, 0, 0, 2, 0, '', '<h2>[*pagetitle*]</h2>\r\n<p>Запрошенная вами страница не существует.</p>\r\n<p><a href="[(site_url)]">Вернуться на главную</a></p>', 1, 2, 100, 0, 1, 1, 1321441207, 1, 1321514221, 0, 0, 0, 1321441207, 1, '', 0, 0, 0, 0, 0, 0, 1),
+(4, 'document', 'text/html', 'Доступ запрещен', '', '', '403', '', 1, 0, 0, 2, 0, '', '<h2>[*pagetitle*]</h2>\r\n<p>Запрошенная вами страница недоступна для просмотра.</p>\r\n<p><a href="[(site_url)]">Вернуться на главную</a></p>', 1, 2, 99, 0, 1, 1, 1322479027, 1, 1322479027, 0, 0, 0, 1322479027, 1, '', 0, 0, 0, 0, 0, 0, 1),
+(6, 'document', 'text/html', 'Сайт недоступен', '', '', '503', '', 1, 0, 0, 2, 0, '', '<h2>[*pagetitle*]</h2>\r\n<p>В настоящее время сайт недоступен.</p>', 1, 2, 101, 0, 1, 1, 1322479027, 1, 1322479027, 0, 0, 0, 1322479027, 1, '', 0, 0, 0, 0, 0, 0, 1),
 (5, 'document', 'text/xml', 'XML карта сайта', '', '', 'sitemap.xml', '', 1, 0, 0, 2, 0, '', '[[sitemap]]', 0, 2, 98, 0, 1, 1, 1328873489, 1, 1328873543, 0, 0, 0, 1328873489, 1, '', 0, 0, 0, 0, 0, 0, 1);
 
 REPLACE INTO `{PREFIX}manager_users` 
@@ -905,10 +906,11 @@ INSERT IGNORE INTO `{PREFIX}system_settings`
 ('server_protocol','http'),
 ('manager_language','{MANAGERLANGUAGE}'),
 ('modx_charset','UTF-8'),
-('site_name','My MODX Site'),
+('site_name','Base MODX Site'),
 ('site_start','1'),
 ('error_page','3'),
 ('unauthorized_page','4'),
+('site_unavailable_page','6'),
 ('site_status','1'),
 ('site_unavailable_message','The site is currently unavailable'),
 ('track_visitors','0'),
