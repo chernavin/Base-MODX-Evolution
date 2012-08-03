@@ -82,7 +82,7 @@ Base MODX Evolution
 * Плагин SEO Strict URLs 1.0.1 (http://modx.com/extras/package/?id=seostricturls)
 * Плагин CodeMirror 2.23 (http://community.modx-cms.ru/blog/tips_and_tricks/6499.html)
 * Плагин customTemplate 0.1 (http://community.modx-cms.ru/blog/addons/2368.html)
-* multiTV 5420e2b (https://github.com/Jako/multiTV), js/multitv.css (7 строка, 100% вместо 510px), russian-UTF8.language.inc.php, multi_image.config.inc.php, multi_file.config.inc.php
+* Реализация и сниппет multiTV 5420e2b (https://github.com/Jako/multiTV), js/multitv.css (7 строка, 100% вместо 510px), russian-UTF8.language.inc.php, multi_image.config.inc.php, multi_file.config.inc.php
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
