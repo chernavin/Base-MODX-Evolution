@@ -61,6 +61,7 @@ Base MODX Evolution
 * Убираем задежку при редактировании документов (http://community.modx-cms.ru/blog/tips_and_tricks/2580.html)
 * Исправление ошибки в mm_widget_showimagetvs (http://community.modx-cms.ru/blog/questions/2486.html#comment19549)
 * Устраняем конфликт вкладок MM с MultiPhotos и MultiFiles (http://community.modx-cms.ru/blog/addons/1232.html#comment18538)
+* mm_createTab, параметр width по умолчанию 100%
 * Ditto &filter, сравнение без учета регистра (http://community.modx-cms.ru/blog/questions/1098.html)
 * Ditto, отключение постраничной навигации если 1 страница (https://github.com/dmi3yy/modx.evo.custom/commit/5cf730a9d170a5c8a4dcff10736fa519adab1f73#diff-13)
 * Отключены сообщения об ошибках для не manager пользователей
@@ -68,7 +69,7 @@ Base MODX Evolution
 * Обновлён класс PHPMailer
 * Исправление верстки в плагине Forgot Manager Login
 * Добавлена директива php_flag magic_quotes_gpc off в .htaccess
-* Добавлена иконка "Управление элементами" для быстрого доступа (https://github.com/dmi3yy/modx.evo.custom/blob/b3a419bdf45e139723ef34f9586fe634718599da/manager/frames/tree.php#L413)
+* Добавлена иконка "Управление элементами" для быстрого доступа (https://github.com/dmi3yy/modx.evo.custom/commit/b3a419bdf45e139723ef34f9586fe634718599da#diff-4)
 
 Добавлено в дистрибутив
 -----------------------

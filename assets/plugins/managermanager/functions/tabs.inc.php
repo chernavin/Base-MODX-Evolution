@@ -123,7 +123,7 @@ function mm_hideTabs($tabs, $roles='', $templates='') {
 // mm_createTab
 // Create a new tab
 //--------------------------------------------------------------------------------- 
-function mm_createTab($name, $id, $roles='', $templates='', $intro='', $width='680') {
+function mm_createTab($name, $id, $roles='', $templates='', $intro='', $width='100%') {
 
 	global $modx;
 	$e = &$modx->Event;
