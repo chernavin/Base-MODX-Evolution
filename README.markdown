@@ -67,7 +67,8 @@ Base MODX Evolution
 * Добавлена возможность смотреть расход памяти
 * Обновлён класс PHPMailer
 * Исправление верстки в плагине Forgot Manager Login
-* Добавлена директива php_flag magic_quotes_gpc off в .htaccess 
+* Добавлена директива php_flag magic_quotes_gpc off в .htaccess
+* Добавлена иконка "Управление элементами" для быстрого доступа (https://github.com/dmi3yy/modx.evo.custom/blob/b3a419bdf45e139723ef34f9586fe634718599da/manager/frames/tree.php#L413)
 
 Добавлено в дистрибутив
 -----------------------
