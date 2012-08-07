@@ -62,6 +62,7 @@ Base MODX Evolution
 * Исправление ошибки в mm_widget_showimagetvs (http://community.modx-cms.ru/blog/questions/2486.html#comment19549)
 * Устраняем конфликт вкладок MM с MultiPhotos и MultiFiles (http://community.modx-cms.ru/blog/addons/1232.html#comment18538)
 * mm_createTab, параметр width по умолчанию 100%; mm_moveFieldsToTab, сохраняем ширину td
+* Исправлен баг с переносом полей типа checkbox на новую вкладку (https://github.com/ncrossland/ManagerManager/commit/050c04c49f149615491293f89ff0204f96f3338b)
 * Ditto &filter, сравнение без учета регистра (http://community.modx-cms.ru/blog/questions/1098.html)
 * Ditto, отключение постраничной навигации если 1 страница (https://github.com/dmi3yy/modx.evo.custom/commit/5cf730a9d170a5c8a4dcff10736fa519adab1f73#diff-13)
 * Отключены сообщения об ошибках для не manager пользователей
