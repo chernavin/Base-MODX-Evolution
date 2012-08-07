@@ -84,7 +84,7 @@ Base MODX Evolution
 * Плагин CodeMirror 2.23 (http://community.modx-cms.ru/blog/tips_and_tricks/6499.html)
 * Плагин customTemplate 0.1 (http://community.modx-cms.ru/blog/addons/2368.html)
 * Реализация и сниппет multiTV 5420e2b (https://github.com/Jako/multiTV), js/multitv.css (7 строка, 100% вместо 510px), russian-UTF8.language.inc.php, multi_image.config.inc.php, multi_file.config.inc.php
-* Сниппет phpthumb (http://community.modx-cms.ru/blog/6217.html), обновление правил индексации в robots.txt
+* Сниппет phpthumb (http://community.modx-cms.ru/blog/6217.html), обновление правил индексации в robots.txt, модификатор для PHx
 * Чанки htmlHead, mmRules, itemSample
 * Сниппеты eFormList, tvList
 * Чанки feedback, feedbackForm, feedbackReport, feedbackThankyou
