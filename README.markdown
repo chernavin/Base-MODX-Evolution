@@ -53,7 +53,7 @@ Base MODX Evolution
 * WebLogin (http://modx-shopkeeper.ru/forum/viewtopic.php?id=226)
 * Руссификация WebChangePwd, WebSignup
 * WebSignup усилена проверка captcha
-* Исправлена уязвимость assets/snippets/weblogin/weblogin.inc.php
+* Исправлена уязвимость weblogin.inc.php (https://github.com/ClipperCMS/ClipperCMS/commit/2eefb4508365cd7f19b584eab310cdbbed2058fa)
 * Ditto (http://modx-shopkeeper.ru/forum/viewtopic.php?id=266)
 * Транслитерация имён файлов при загрузке в MODx (http://www.supremum.lv/2010/04/09/transliteraciya-imyon-fajlov-pri-zagruzke-v-modx/)
 * Управление страницами вне дерева (http://community.modx-cms.ru/blog/tips_and_tricks/848.html)
