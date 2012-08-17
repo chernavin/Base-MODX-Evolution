@@ -3,7 +3,7 @@
 if(!isset($options)) return;
 if(!isset($output)) return;
 
-return $modx->runSnippet('phpthumb', array(
+return $modx->runSnippet('phpthumbof', array(
 	'input' => $output,
 	'options' => $options
 ));
