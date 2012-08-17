@@ -1,6 +1,6 @@
 //<?php
 /**
- * phpthumb
+ * phpthumbof
  * 
  * Генерация изображений
  *
@@ -15,12 +15,12 @@ $replace = array(',' => '&', '_' => '=');
 $options = strtr($options, $replace);
 $options .= '&f=jpg&q=90';
 $docid = $modx->documentIdentifier;
-$outputFilename = MODX_BASE_PATH . 'assets/cache/phpthumb/' .
+$outputFilename = MODX_BASE_PATH . 'assets/cache/phpthumbof/' .
 					md5($input . $docid . $options) . '.jpg';
 
 if ( ! file_exists($outputFilename))
 {
-	require_once MODX_BASE_PATH . 'assets/snippets/phpthumb/phpthumb.class.php';
+	require_once MODX_BASE_PATH . 'assets/snippets/phpthumbof/phpthumb.class.php';
 	$phpThumb = new phpthumb();
 	$phpThumb->setSourceFilename(MODX_BASE_PATH . $input);
 

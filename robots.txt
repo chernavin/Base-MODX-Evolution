@@ -2,7 +2,7 @@
 User-agent: *
 Disallow: /assets/cache/
 Disallow: /assets/docs/
-Allow: /assets/cache/phpthumb/
+Allow: /assets/cache/phpthumbof/
 Disallow: /assets/export/
 Disallow: /assets/import/
 Disallow: /assets/modules/
