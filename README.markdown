@@ -43,6 +43,7 @@ Base MODX Evolution
 * Скрипты frankensleight.js и csshover3.htc, файл README.txt из директории assets/js
 * Директории assets/plugins/managermanager/docs, assets/snippets/ajaxSearch/documentation, assets/snippets/eform/docs, assets/snippets/wayfinder/examples
 * Редко используемые языки, оставлены языки - Русский, Английский, Французкий, Немецкий, Итальянский, Испанский
+* Файл index-ajax.php
 
 Обновлено в дистрибутиве
 ------------------------
